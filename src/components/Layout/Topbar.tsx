@@ -1,14 +1,22 @@
 import React from "react";
 import styles from "./Topbar.module.css";
+import { TrackedLink } from "@/components/UI";
 
 export const Topbar: React.FC = () => {
   return (
     <div className={`topbar ${styles.topbar}`}>
-      <a href="tel:+212662177069" className={styles.phoneLink}>
+      <TrackedLink
+        eventName="contact_phone"
+        fbEventName="Contact"
+        href="tel:+212662177069"
+        className={styles.phoneLink}
+      >
         📞 +212 662 177 069
-      </a>
+      </TrackedLink>
       <div className={styles.separator}></div>
-      <a
+      <TrackedLink
+        eventName="contact_whatsapp"
+        fbEventName="Contact"
         className={styles.whatsappLink}
         href="https://wa.me/212662177069"
         target="_blank"
@@ -26,7 +34,7 @@ export const Topbar: React.FC = () => {
           <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.857L.057 23.885a.75.75 0 0 0 .921.921l6.101-1.46A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.88 0-3.645-.52-5.153-1.424l-.37-.22-3.822.914.93-3.741-.242-.384A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"></path>
         </svg>
         WhatsApp
-      </a>
+      </TrackedLink>
     </div>
   );
 };

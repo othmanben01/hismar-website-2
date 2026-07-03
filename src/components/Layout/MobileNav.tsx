@@ -3,6 +3,7 @@
 import React, { useState, useCallback, useRef } from "react";
 import styles from "./MobileNav.module.css";
 import { useClickOutside } from "@/hooks/useClickOutside";
+import { TrackedLink } from "@/components/UI";
 
 export const MobileNav: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,9 +37,14 @@ export const MobileNav: React.FC = () => {
       <div className={styles.mobnavBar}>
         <span className={styles.brand}>HISMAR</span>
         <div className={styles.right}>
-          <a className={styles.tel} href="tel:+212662177069">
+          <TrackedLink
+            className={styles.tel}
+            href="tel:+212662177069"
+            eventName="contact_phone"
+            fbEventName="Contact"
+          >
             +212 662 177 069
-          </a>
+          </TrackedLink>
           <button
             className={styles.toggle}
             onClick={toggleMenu}

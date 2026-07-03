@@ -25,7 +25,15 @@ export const ContactForm: React.FC = () => {
         msg,
       });
 
+      // Tracking des conversions
       if (typeof window !== "undefined") {
+        if (typeof (window as any).gtag === "function") {
+          (window as any).gtag("event", "generate_lead");
+        }
+        if (typeof (window as any).fbq === "function") {
+          (window as any).fbq("track", "Lead");
+        }
+        
         window.open(link, "_blank");
       }
     },

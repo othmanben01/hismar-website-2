@@ -4,3 +4,4 @@ export { FloatingControl } from "./FloatingControl";
 export { Goldbox } from "./Goldbox";
 export { Timeline } from "./Timeline";
 export type { TimelineStep } from "./Timeline";
+export { TrackedLink } from "./TrackedLink";
