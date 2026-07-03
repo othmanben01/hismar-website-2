@@ -1,0 +1,65 @@
+.goldbox {
+  border: 1px solid var(--gold);
+  padding: 20px 26px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.mark {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-size: 15px;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--night);
+  line-height: 1.35;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: var(--ink);
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+:global(.night) .title {
+  color: var(--cream);
+}
+
+:global(.night) .subtitle {
+  color: rgba(249, 248, 246, 0.7);
+}
+
+@media (max-width: 767px) {
+  .goldbox {
+    padding: 12px 14px !important;
+    gap: 10px !important;
+  }
+  
+  .title {
+    font-size: 13.5px !important;
+  }
+  
+  .mark {
+    width: 28px !important;
+    height: 28px !important;
+    font-size: 12px !important;
+  }
+}

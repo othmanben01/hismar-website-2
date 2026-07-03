@@ -1,0 +1,103 @@
+.mobnav {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  background: var(--night);
+  border-bottom: 1px solid rgba(168, 131, 74, 0.3);
+  display: none;
+}
+
+.mobnavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.brand {
+  font-family: var(--serif);
+  font-size: 16px;
+  letter-spacing: 0.38em;
+  color: var(--cream);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tel {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.14em;
+  color: var(--gold-light);
+  text-decoration: none;
+}
+
+.toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 8px;
+  min-width: 36px;
+}
+
+.toggleBar {
+  display: block;
+  width: 20px;
+  height: 1.5px;
+  background: var(--cream);
+  transition: all 0.2s ease;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  background: var(--night);
+  border-top: 1px solid rgba(168, 131, 74, 0.14);
+  padding: 2px 0 14px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.menu.open {
+  display: flex;
+}
+
+.menuLink {
+  padding: 12px 22px;
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(249, 248, 246, 0.62);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(168, 131, 74, 0.07);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menuLink:last-child {
+  border-bottom: none;
+}
+
+.menuLink:active,
+.menuLink:hover {
+  color: var(--gold-light);
+  background: rgba(168, 131, 74, 0.06);
+}
+
+@media (max-width: 767px) {
+  .mobnav {
+    display: block;
+  }
+}
+
+@media print {
+  .mobnav {
+    display: none !important;
+  }
+}

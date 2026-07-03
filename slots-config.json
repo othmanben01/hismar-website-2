@@ -1,0 +1,257 @@
+{
+  "cover-hero": {
+    "src": "/uploads/cover-hero.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "p2-photo": {
+    "src": "/uploads/p2-photo.jpg",
+    "fit": "cover",
+    "pos": "50% 100%"
+  },
+  "p3-machine": {
+    "src": "/uploads/p3-machine.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "p3-atelier": {
+    "src": "/uploads/p3-atelier.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "p4-cert-1": {
+    "src": "/uploads/p4-cert-1.jpg",
+    "fit": "cover",
+    "pos": "50% 0%"
+  },
+  "p4-cert-2": {
+    "src": "/uploads/p4-cert-2.jpg",
+    "fit": "cover",
+    "pos": "50% 0%"
+  },
+  "p4-cert-3": {
+    "src": "/uploads/p4-cert-3.jpg",
+    "fit": "cover",
+    "pos": "50% 0%"
+  },
+  "p5-s1": {
+    "src": "/uploads/p5-s1.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "p5-s2": {
+    "src": "/uploads/p5-s2.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "p5-s3": {
+    "src": "/uploads/p5-s3.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "p5-s4": {
+    "src": "/uploads/p5-s4.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pe-hero": {
+    "src": "/uploads/pe-hero.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pe-fin-1": {
+    "src": "/uploads/pe-fin-1.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pe-fin-2": {
+    "src": "/uploads/pe-fin-2.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pe-fin-3": {
+    "src": "/uploads/pe-fin-3.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pe-traitement": {
+    "src": "/uploads/pe-traitement.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pe-acier": {
+    "src": "/uploads/pe-acier.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pi-hero": {
+    "src": "/uploads/pi-hero.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pi-bois-1": {
+    "src": "/uploads/pi-bois-1.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pi-bois-2": {
+    "src": "/uploads/pi-bois-2.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pi-bois-3": {
+    "src": "/uploads/pi-bois-3.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pi-bois-4": {
+    "src": "/uploads/pi-bois-4.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pi-bois-5": {
+    "src": "/uploads/pi-bois-5.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pi-placage": {
+    "src": "/uploads/pi-placage.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pi-humidite": {
+    "src": "/uploads/pi-humidite.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pi-brand-1": {
+    "src": "/uploads/pi-brand-1.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pi-brand-2": {
+    "src": "/uploads/pi-brand-2.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pi-fsc": {
+    "src": "/uploads/pi-fsc.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pl-hero": {
+    "src": "/uploads/pl-hero.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pl-fac-1": {
+    "src": "/uploads/pl-fac-1.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pl-fac-2": {
+    "src": "/uploads/pl-fac-2.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pl-fac-3": {
+    "src": "/uploads/pl-fac-3.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pl-fac-4": {
+    "src": "/uploads/pl-fac-4.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pl-fac-5": {
+    "src": "/uploads/pl-fac-5.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pl-mdf": {
+    "src": "/uploads/pl-mdf.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pl-blum": {
+    "src": "/uploads/pl-blum.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pl-3d": {
+    "src": "/uploads/pl-3d.jpg?v=1783085138740",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "cu-hero": {
+    "src": "/uploads/cu-hero.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "cu-pt-1": {
+    "src": "/uploads/cu-pt-1.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "cu-pt-2": {
+    "src": "/uploads/cu-pt-2.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "cu-pt-3": {
+    "src": "/uploads/cu-pt-3.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "cu-pt-4": {
+    "src": "/uploads/cu-pt-4.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "cu-pt-5": {
+    "src": "/uploads/cu-pt-5.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "cu-fac-1": {
+    "src": "/uploads/cu-fac-1.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "cu-fac-2": {
+    "src": "/uploads/cu-fac-2.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "cu-fac-3": {
+    "src": "/uploads/cu-fac-3.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "cu-fac-4": {
+    "src": "/uploads/cu-fac-4.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "cu-fac-5": {
+    "src": "/uploads/cu-fac-5.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "cu-panneau": {
+    "src": "/uploads/cu-panneau.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "cu-blum": {
+    "src": "/uploads/cu-blum.jpg",
+    "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "cu-scm": {
+    "src": "/uploads/cu-scm.jpg?v=1783085129406",
+    "fit": "cover",
+    "pos": "50% 50%"
+  }
+}

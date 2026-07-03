@@ -1,0 +1,120 @@
+/* ── Variables ── */
+:root {
+  --night:      #1C1410;
+  --gold:       #A8834A;
+  --gold-light: #C9A86A;
+  --cream:      #F9F8F6;
+  --ink:        #5C4A3A;
+  --ink-light:  #9C8472;
+  --border:     #E0D8CE;
+  --serif: Georgia, 'Times New Roman', serif;
+  --sans:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --mono:  'Courier New', Courier, monospace;
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #2a1f18;
+  font-family: var(--sans);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 58px;
+}
+
+/* ── Typographie partagée ── */
+.eyebrow {
+  font-family: var(--mono);
+  font-weight: normal;
+  font-size: 9px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+h2 {
+  font-family: var(--serif);
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 1.14;
+  color: var(--night);
+}
+
+h3 {
+  font-family: var(--serif);
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 1.25;
+  color: var(--night);
+}
+
+.lede {
+  font-size: 14px;
+  line-height: 1.78;
+  color: var(--ink);
+  font-weight: normal;
+}
+
+.mono {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+/* ── Éléments partagés ── */
+.rule-gold {
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.5;
+}
+
+/* ── Print ── */
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  /* Hide interactive bars */
+  .topbar, .mobnav, .wa-fab, #mobnav, .wa_fab {
+    display: none !important;
+  }
+
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .doc {
+    padding: 0 !important;
+    gap: 0 !important;
+    display: block !important;
+  }
+
+  .page {
+    width: 210mm !important;
+    height: 296.8mm !important;
+    box-shadow: none !important;
+    break-after: page !important;
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  .page:last-child {
+    break-after: auto !important;
+  }
+}

@@ -1,0 +1,60 @@
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: var(--night);
+  border-bottom: 1px solid rgba(168, 131, 74, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 10px 40px;
+}
+
+.phoneLink,
+.whatsappLink {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(249, 248, 246, 0.72);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s ease;
+}
+
+.phoneLink:hover,
+.whatsappLink:hover {
+  color: var(--gold-light);
+}
+
+.separator {
+  width: 1px;
+  height: 14px;
+  background: rgba(168, 131, 74, 0.3);
+}
+
+.whatsappLink {
+  background: rgba(37, 211, 102, 0.12);
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  color: #4fda88;
+  padding: 6px 14px;
+  border-radius: 2px;
+}
+
+.whatsappLink:hover {
+  background: rgba(37, 211, 102, 0.2);
+  color: #6fe8a0;
+}
+
+.waIcon {
+  flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+  .topbar {
+    display: none !important;
+  }
+}

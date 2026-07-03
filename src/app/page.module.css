@@ -1,0 +1,754 @@
+.doc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  padding: 48px 24px 80px;
+  background: #2a1f18;
+}
+
+.bodyPad {
+  padding: 0 60px;
+  width: 100%;
+}
+
+/* ── Page Headings & Footer shared layouts ── */
+.pageHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 44px 60px 0;
+  width: 100%;
+}
+
+.logoSm {
+  font-family: var(--serif);
+  font-size: 15px;
+  letter-spacing: 0.42em;
+  color: var(--night);
+}
+
+.pageHeadNight .logoSm {
+  color: var(--cream);
+}
+
+.pageHead .meta {
+  color: var(--ink-light);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.pageHeadNight .meta {
+  color: rgba(249, 248, 246, 0.4);
+}
+
+.pageFoot {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px 36px;
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  width: 100%;
+}
+
+.pageFootNight {
+  color: rgba(249, 248, 246, 0.3) !important;
+}
+
+/* ── PAGE 1 — COUVERTURE ── */
+.cover {
+  justify-content: flex-start;
+}
+
+.coverTop {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 60px 0;
+  color: rgba(249, 248, 246, 0.5);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.coverCenter {
+  text-align: center;
+  padding: 76px 60px 56px;
+  width: 100%;
+}
+
+.coverEst {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 19px;
+  color: var(--gold-light);
+  letter-spacing: 0.08em;
+}
+
+.coverLogo {
+  font-family: var(--serif);
+  font-weight: normal;
+  font-size: 84px;
+  letter-spacing: 0.28em;
+  color: var(--cream);
+  margin: 16px 0 0 0.28em;
+}
+
+.coverRule {
+  width: 56px;
+  height: 1px;
+  background: var(--gold);
+  margin: 30px auto;
+}
+
+.coverTagline {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 22px;
+  color: var(--cream);
+}
+
+.coverSub {
+  margin-top: 18px;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: rgba(249, 248, 246, 0.68);
+  line-height: 1.7;
+}
+
+.coverPhoto {
+  padding: 0 60px;
+  width: 100%;
+}
+
+.coverFoot {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px 40px;
+  color: rgba(249, 248, 246, 0.44);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* ── PAGE 2 — PILIERS ── */
+.pillars {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  width: 100%;
+}
+
+.pillar .pnum {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  color: var(--gold);
+}
+
+.pillar h3 {
+  margin: 11px 0 9px;
+  font-size: 18px;
+}
+
+.pillar p {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  width: 100%;
+}
+
+.stat {
+  text-align: center;
+  padding: 26px 10px;
+}
+
+.stat + .stat {
+  border-left: 1px solid var(--border);
+}
+
+.stat .n {
+  font-family: var(--serif);
+  font-size: 42px;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.stat .l {
+  margin-top: 9px;
+  font-size: 9px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  font-family: var(--mono);
+}
+
+/* ── PAGE 3 — ATELIERS ── */
+.machines {
+  display: flex;
+  flex-direction: column;
+}
+
+.machine {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 14px;
+  align-items: baseline;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.machine:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.machine .mnum {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+}
+
+.machine .mname {
+  font-family: var(--serif);
+  font-size: 16px;
+  color: var(--night);
+}
+
+.machine .mname em {
+  font-family: var(--sans);
+  font-style: normal;
+  font-size: 11px;
+  color: var(--ink-light);
+  margin-left: 10px;
+}
+
+/* ── PAGE 4 — MATIÈRES ── */
+.hwGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  width: 100%;
+}
+
+.hwBrand {
+  font-family: var(--serif);
+  font-size: 26px;
+  color: var(--night);
+  line-height: 1.2;
+  margin-top: 14px;
+}
+
+.hwList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 34px;
+}
+
+.hwList li {
+  font-size: 13px;
+  color: var(--ink);
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.hwList li::before {
+  content: "—";
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.certSlots {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+}
+
+/* ── PAGE 5 — SERVICES ── */
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 28px;
+  width: 100%;
+}
+
+.service .snum {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  color: var(--gold);
+}
+
+.service h3 {
+  margin: 8px 0 6px;
+  font-size: 18px;
+}
+
+.service p {
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+/* ── PAGE 7 — CERTIFICATIONS ── */
+.certs {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.cert {
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--gold);
+  padding: 20px 26px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.certCheck {
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  color: var(--gold);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.cert h3 {
+  font-size: 17px;
+  color: var(--night);
+  margin-bottom: 5px;
+}
+
+.cert p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.certNote {
+  text-align: center;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--ink-light);
+  width: 100%;
+}
+
+/* ── PAGE 8 — CONTACT ── */
+.contactCenter {
+  text-align: center;
+  padding: 100px 70px 0;
+  width: 100%;
+}
+
+.contactCenter h2 {
+  color: var(--gold-light);
+  font-size: 46px;
+}
+
+.contactCenter .lede {
+  color: rgba(249, 248, 246, 0.75);
+  margin: 24px auto 0;
+  max-width: 420px;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 48px;
+  padding: 56px 110px 0;
+  width: 100%;
+}
+
+.contactGrid .cell .lab {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 7px;
+}
+
+.contactGrid .cell .val {
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--cream);
+}
+
+.ctaWrap {
+  text-align: center;
+  padding-top: 60px;
+  width: 100%;
+}
+
+.cta {
+  display: inline-block;
+  border: 1px solid var(--gold);
+  color: var(--gold-light);
+  padding: 17px 38px;
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: var(--mono);
+  transition: all 0.2s ease;
+}
+
+.cta:hover {
+  background: rgba(168, 131, 74, 0.12);
+}
+
+.contactFoot {
+  margin-top: auto;
+  text-align: center;
+  padding-bottom: 48px;
+  width: 100%;
+}
+
+.contactFoot .tagline {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 15px;
+  color: rgba(249, 248, 246, 0.4);
+}
+
+/* ── Cover CTAs ── */
+.coverCtas {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  padding: 0 60px;
+  margin-top: 22px;
+  width: 100%;
+}
+
+.btnWa {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: rgba(37, 211, 102, 0.14);
+  border: 1px solid rgba(37, 211, 102, 0.4);
+  color: #4fda88;
+  padding: 13px 24px;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btnWa:hover {
+  background: rgba(37, 211, 102, 0.22);
+}
+
+.btnDevis {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid rgba(168, 131, 74, 0.55);
+  color: var(--gold-light);
+  padding: 13px 24px;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.btnDevis:hover {
+  border-color: var(--gold);
+  background: rgba(168, 131, 74, 0.08);
+}
+
+.contactLinks {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  padding: 0 60px;
+  margin-top: 18px;
+  width: 100%;
+}
+
+/* ── Floating WhatsApp ── */
+.waFab {
+  position: fixed;
+  bottom: 18px;
+  right: 16px;
+  z-index: 9998;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.28);
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.waFab:hover {
+  background: #20ba5a;
+  transform: scale(1.05);
+}
+
+/* ═══════════════════════════════════════════════
+   MOBILE FIRST — responsive overrides ≤ 767px
+   ═══════════════════════════════════════════════ */
+@media (max-width: 767px) {
+  .doc {
+    display: block !important;
+    padding: 0 !important;
+    gap: 0 !important;
+    background: #F5F0EB;
+  }
+
+  .bodyPad {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .pageHead {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 26px !important;
+  }
+
+  .pageFoot {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 24px !important;
+    margin-top: 24px !important;
+  }
+
+  /* Cover */
+  .coverTop {
+    padding: 16px 20px 0 !important;
+    font-size: 7.5px !important;
+  }
+
+  .coverCenter {
+    padding: 30px 20px 22px !important;
+  }
+
+  .coverLogo {
+    font-size: clamp(34px, 13vw, 68px) !important;
+    letter-spacing: 0.14em !important;
+    margin-left: 0 !important;
+  }
+
+  .coverEst {
+    font-size: 14px !important;
+  }
+
+  .coverTagline {
+    font-size: 15px !important;
+  }
+
+  .coverSub {
+    font-size: 11.5px !important;
+    margin-top: 10px !important;
+  }
+
+  .coverRule {
+    margin: 18px auto !important;
+  }
+
+  .coverPhoto {
+    padding: 0 20px !important;
+  }
+
+  .coverCtas {
+    flex-direction: column !important;
+    padding: 0 20px !important;
+    gap: 9px !important;
+    margin-top: 14px !important;
+    align-items: stretch !important;
+  }
+
+  .coverCtas a {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .coverFoot {
+    padding: 0 20px 18px !important;
+    font-size: 7.5px !important;
+  }
+
+  /* Pillars */
+  .pillars {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  /* Stats */
+  .stat {
+    padding: 12px 4px !important;
+  }
+
+  .stat .n {
+    font-size: 26px !important;
+  }
+
+  .stat .l {
+    font-size: 7px !important;
+    letter-spacing: 0.12em !important;
+  }
+
+  /* Services */
+  .services {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  /* Hardware */
+  .hwGrid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hwList {
+    margin-top: 14px !important;
+  }
+
+  .hwBrand {
+    margin-top: 10px !important;
+    font-size: 22px !important;
+  }
+
+  /* Cert slots grid */
+  .certSlots {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+  }
+
+  /* Machines */
+  .machine {
+    grid-template-columns: 36px 1fr !important;
+    padding: 10px 0 !important;
+  }
+
+  /* Certs */
+  .certs {
+    gap: 10px !important;
+  }
+
+  .cert {
+    padding: 13px 14px !important;
+    gap: 10px !important;
+  }
+
+  .certCheck {
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 10px !important;
+  }
+
+  .cert h3 {
+    font-size: 14px !important;
+  }
+
+  .cert p {
+    font-size: 11px !important;
+  }
+
+  .certNote {
+    font-size: 13px !important;
+  }
+
+  /* Contact */
+  .contactCenter {
+    padding: 36px 20px 0 !important;
+  }
+
+  .contactCenter h2 {
+    font-size: clamp(26px, 7vw, 36px) !important;
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr !important;
+    padding: 24px 20px 0 !important;
+    gap: 18px !important;
+  }
+
+  .contactGrid .cell .val {
+    font-size: 16px !important;
+  }
+
+  .ctaWrap {
+    padding-top: 28px !important;
+  }
+
+  .cta {
+    padding: 13px 24px !important;
+    font-size: 9px !important;
+  }
+
+  .contactFoot {
+    padding-bottom: 28px !important;
+  }
+
+  /* Inline grid stacking for arbitrary inline layouts */
+  :global(div[style*="grid-template-columns:1fr 252px"]),
+  :global(div[style*="grid-template-columns:1fr 240px"]) {
+    grid-template-columns: 1fr !important;
+  }
+  
+  :global(div[style*="grid-template-columns:1fr 252px"] > .img-slot),
+  :global(div[style*="grid-template-columns:1fr 240px"] > .img-slot) {
+    order: -1 !important;
+    max-height: 220px !important;
+    width: 100% !important;
+    margin-bottom: 4px;
+  }
+  
+  :global(div[style*="grid-template-columns:130px 1fr"]) {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Display FAB */
+  .waFab {
+    display: flex;
+  }
+}
+
+@media print {
+  .waFab {
+    display: none !important;
+  }
+}

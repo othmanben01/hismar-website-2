@@ -1,0 +1,52 @@
+.page {
+  width: 794px;
+  min-height: 1123px;
+  height: 1123px;
+  box-shadow: 0 4px 28px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  background: #ffffff;
+  color: var(--ink);
+  transition: box-shadow 0.2s ease;
+}
+
+.night {
+  background: var(--night) !important;
+  color: var(--cream) !important;
+}
+
+.cream {
+  background: var(--cream) !important;
+}
+
+.white {
+  background: #ffffff !important;
+}
+
+@media (max-width: 767px) {
+  .page {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+  }
+
+  .page + .page:not(.night) {
+    border-top: 5px solid #E8E0D5;
+  }
+}
+
+@media print {
+  .page {
+    width: 210mm !important;
+    height: 296.8mm !important;
+    box-shadow: none !important;
+    break-after: page !important;
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+}
