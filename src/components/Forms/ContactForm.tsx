@@ -27,7 +27,7 @@ export const ContactForm: React.FC = () => {
       });
 
       // Tracking des conversions
-      trackConversion("generate_lead", "Lead");
+      trackConversion("form_submit", "Lead");
       
       window.open(link, "_blank");
     },
