@@ -5,7 +5,7 @@
     "pos": "50% 50%"
   },
   "p2-photo": {
-    "src": "/uploads/p2-photo.jpg",
+    "src": "/uploads/p2-photo.jpg?v=1783341094075",
     "fit": "cover",
     "pos": "50% 100%"
   },
@@ -126,12 +126,12 @@
   },
   "pi-brand-1": {
     "src": "/uploads/pi-brand-1.jpg",
-    "fit": "cover",
+    "fit": "contain",
     "pos": "50% 50%"
   },
   "pi-brand-2": {
     "src": "/uploads/pi-brand-2.jpg",
-    "fit": "cover",
+    "fit": "contain",
     "pos": "50% 50%"
   },
   "pi-fsc": {

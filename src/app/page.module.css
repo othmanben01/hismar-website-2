@@ -262,6 +262,19 @@
   width: 100%;
 }
 
+/* ── Utility Grids ── */
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
 .hwBrand {
   font-family: var(--serif);
   font-size: 26px;
@@ -745,22 +758,25 @@
     padding-bottom: 28px !important;
   }
 
-  /* Inline grid stacking for arbitrary inline layouts */
-  :global(div[style*="grid-template-columns:1fr 252px"]),
-  :global(div[style*="grid-template-columns:1fr 240px"]) {
+  /* Override all inline grids to stack on mobile */
+  :global(div[style*="1fr 1fr"]),
+  :global(div[style*="1fr 1fr 1fr"]),
+  :global(div[style*="repeat(5, 1fr)"]),
+  :global(div[style*="1fr 252px"]),
+  :global(div[style*="1fr 240px"]),
+  :global(div[style*="130px 1fr"]),
+  .grid2, .grid3 {
     grid-template-columns: 1fr !important;
   }
   
-  :global(div[style*="grid-template-columns:1fr 252px"] > .img-slot),
-  :global(div[style*="grid-template-columns:1fr 240px"] > .img-slot) {
+  /* Reorder image slots to be on top in stacked layouts */
+  :global(div[style*="1fr"] > .img-slot),
+  .grid2 > .img-slot,
+  .grid3 > .img-slot {
     order: -1 !important;
-    max-height: 220px !important;
+    max-height: 240px !important;
     width: 100% !important;
-    margin-bottom: 4px;
-  }
-  
-  :global(div[style*="grid-template-columns:130px 1fr"]) {
-    grid-template-columns: 1fr !important;
+    margin-bottom: 12px !important;
   }
 
   /* Display FAB */
