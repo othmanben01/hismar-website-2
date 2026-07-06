@@ -2,6 +2,7 @@ export { PageSection } from "./PageSection";
 export { ImageSlot } from "./ImageSlot";
 export { FloatingControl } from "./FloatingControl";
 export { Goldbox } from "./Goldbox";
+export { Reveal } from "./Reveal";
 export { Timeline } from "./Timeline";
 export type { TimelineStep } from "./Timeline";
 export { TrackedLink } from "./TrackedLink";

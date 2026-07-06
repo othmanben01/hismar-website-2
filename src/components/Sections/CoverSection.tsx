@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "@/app/page.module.css";
-import { PageSection, ImageSlot, TrackedLink } from "@/components/UI";
+import { PageSection, ImageSlot, TrackedLink, Reveal } from "@/components/UI";
 
 interface CoverSectionProps {
-  title?: React.ReactNode;
-  subtitle?: React.ReactNode;
+  title?: string;
+  subtitle?: string;
 }
 
 export const CoverSection: React.FC<CoverSectionProps> = ({
-  title = "Le bois\u00A0élevé\u00A0au rang d’art.",
-  subtitle = "Manufacture sur mesure pour chantiers de construction neuve — villas et résidences haut de gamme."
+  title = "Menuiserie d'art et agencement d'intérieur.",
+  subtitle = "Portes intérieures et d'entrée, dressings et cuisines sur mesure."
 }) => {
   return (
     <PageSection theme="night" id="accueil" label="01 Couverture" className={styles.cover}>
@@ -18,22 +18,20 @@ export const CoverSection: React.FC<CoverSectionProps> = ({
         <span>Casablanca — Est. 1968</span>
       </div>
       <div className={styles.coverCenter}>
-        <div className={styles.coverEst}>Depuis 1968</div>
-        <h1 className={styles.coverLogo}>HISMAR</h1>
-        <div className={styles.coverRule}></div>
-        <div className={styles.coverTagline}>{title}</div>
-        <div className={styles.coverSub}>{subtitle}</div>
-        <div
-          style={{
-            marginTop: "20px",
-            fontFamily: "var(--mono)",
-            fontSize: "14.4px",
-            letterSpacing: ".22em",
-            color: "rgba(249,248,246,.55)",
-          }}
-        >
-          Portes &nbsp;·&nbsp; Placards &nbsp;·&nbsp; Cuisines&nbsp;&nbsp;·&nbsp;&nbsp;sur mesure
-        </div>
+        <Reveal>
+          <div className={styles.coverEst}>Depuis 1968</div>
+          <h1 className={styles.coverLogo}>HISMAR</h1>
+        </Reveal>
+        
+        <Reveal delay={0.1}>
+          <div className={styles.coverRule}></div>
+          <p className={styles.coverTagline} style={{ marginTop: "22px" }}>
+            {title}
+          </p>
+          <div className={styles.coverSub}>
+            {subtitle}
+          </div>
+        </Reveal>
         <div
           style={{
             marginTop: "9px",
