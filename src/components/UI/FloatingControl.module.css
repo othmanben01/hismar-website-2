@@ -10,7 +10,7 @@
   min-width: 206px;
   border-radius: 2px;
   font-family: 'Courier New', monospace;
-  font-size: 9px;
+  font-size: 10.8px;
   line-height: 1;
   letter-spacing: 0.16em;
   color: rgba(249, 248, 246, 0.85);
@@ -27,7 +27,7 @@
 
 .label {
   color: rgba(168, 131, 74, 0.6);
-  font-size: 8px;
+  font-size: 9.6px;
   letter-spacing: 0.28em;
 }
 
@@ -44,7 +44,7 @@
   cursor: pointer;
   border-radius: 2px;
   font-family: inherit;
-  font-size: 9px;
+  font-size: 10.8px;
   letter-spacing: 0.12em;
   padding: 5px 11px;
   text-transform: uppercase;
@@ -79,7 +79,7 @@
   height: 30px;
   cursor: pointer;
   border-radius: 2px;
-  font-size: 14px;
+  font-size: 16.8px;
   display: flex;
   align-items: center;
   justify-content: center;

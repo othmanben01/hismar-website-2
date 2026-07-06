@@ -16,7 +16,7 @@
 
 .brand {
   font-family: var(--serif);
-  font-size: 16px;
+  font-size: 19.2px;
   letter-spacing: 0.38em;
   color: var(--cream);
 }
@@ -29,7 +29,7 @@
 
 .quoteBtn {
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: 10.8px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--gold-light);
@@ -46,7 +46,7 @@
 
 .tel {
   font-family: var(--mono);
-  font-size: 8.5px;
+  font-size: 10.2px;
   letter-spacing: 0.14em;
   color: var(--gold-light);
   text-decoration: none;
@@ -88,7 +88,7 @@
 .menuLink {
   padding: 12px 22px;
   font-family: var(--mono);
-  font-size: 8.5px;
+  font-size: 10.2px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(249, 248, 246, 0.62);
@@ -126,7 +126,7 @@
 
   .quoteBtn {
     padding: 6px 10px;
-    font-size: 8px;
+    font-size: 9.6px;
     letter-spacing: 0.15em;
   }
 }

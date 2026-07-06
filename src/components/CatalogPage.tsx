@@ -69,7 +69,7 @@ export const CatalogPage: React.FC = () => {
               style={{
                 marginTop: "20px",
                 fontFamily: "var(--mono)",
-                fontSize: "12px",
+                fontSize: "14.4px",
                 letterSpacing: ".22em",
                 color: "rgba(249,248,246,.55)",
               }}
@@ -80,7 +80,7 @@ export const CatalogPage: React.FC = () => {
               style={{
                 marginTop: "9px",
                 fontFamily: "var(--mono)",
-                fontSize: "12px",
+                fontSize: "14.4px",
                 letterSpacing: ".18em",
                 color: "rgba(168,131,74,.7)",
               }}
@@ -298,7 +298,7 @@ export const CatalogPage: React.FC = () => {
               <div className={styles.hwBrand}>
                 Blum &amp; Hettich
                 <br />
-                <span style={{ fontSize: "15px", fontStyle: "italic", color: "var(--ink-light)" }}>
+                <span style={{ fontSize: "18px", fontStyle: "italic", color: "var(--ink-light)" }}>
                   référence mondiale
                 </span>
               </div>
@@ -434,7 +434,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   marginTop: "13px",
                   color: "var(--cream)",
-                  fontSize: "36px",
+                  fontSize: "43.2px",
                   lineHeight: "1.1",
                   maxWidth: "400px",
                 }}
@@ -444,7 +444,7 @@ export const CatalogPage: React.FC = () => {
               <p
                 style={{
                   marginTop: "18px",
-                  fontSize: "13px",
+                  fontSize: "15.6px",
                   lineHeight: "1.76",
                   color: "rgba(249,248,246,.65)",
                   maxWidth: "380px",
@@ -464,7 +464,7 @@ export const CatalogPage: React.FC = () => {
                 <p
                   style={{
                     marginTop: "10px",
-                    fontSize: "13px",
+                    fontSize: "15.6px",
                     lineHeight: "1.72",
                     color: "rgba(249,248,246,.65)",
                   }}
@@ -491,7 +491,7 @@ export const CatalogPage: React.FC = () => {
                 <p
                   style={{
                     marginTop: "10px",
-                    fontSize: "12.5px",
+                    fontSize: "15px",
                     lineHeight: "1.7",
                     color: "rgba(249,248,246,.62)",
                   }}
@@ -504,7 +504,7 @@ export const CatalogPage: React.FC = () => {
                 <p
                   style={{
                     marginTop: "10px",
-                    fontSize: "12.5px",
+                    fontSize: "15px",
                     lineHeight: "1.7",
                     color: "rgba(249,248,246,.62)",
                   }}
@@ -517,7 +517,7 @@ export const CatalogPage: React.FC = () => {
                 <p
                   style={{
                     marginTop: "10px",
-                    fontSize: "12.5px",
+                    fontSize: "15px",
                     lineHeight: "1.7",
                     color: "rgba(249,248,246,.62)",
                   }}
@@ -585,7 +585,7 @@ export const CatalogPage: React.FC = () => {
               />
               <div style={{ marginTop: "18px" }}>
                 <span className="eyebrow">Triple protection à l’italienne</span>
-                <p style={{ marginTop: "10px", fontSize: "13px", lineHeight: "1.74" }}>
+                <p style={{ marginTop: "10px", fontSize: "15.6px", lineHeight: "1.74" }}>
                   Traitement insecticide, anti-UV and anti-intempéries — fond et vernis italiens
                   appliqués en atelier. La porte conserve sa teinte et sa structure intactes, saison
                   après saison. Fabriquée pour durer une vie.
@@ -600,7 +600,7 @@ export const CatalogPage: React.FC = () => {
               />
               <div style={{ marginTop: "18px" }}>
                 <span className="eyebrow">PROFILE ACIER INTERIEURE</span>
-                <p style={{ marginTop: "10px", fontSize: "13px", lineHeight: "1.74" }}>
+                <p style={{ marginTop: "10px", fontSize: "15.6px", lineHeight: "1.74" }}>
                   Un profilé en acier en L, incrusté avec précision dans l'encadrement en bois
                   rouge. Une armature invisible qui garantit une stabilité absolue contre le
                   gauchissement.
@@ -614,7 +614,7 @@ export const CatalogPage: React.FC = () => {
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "36px", alignItems: "center" }}>
               <div>
                 <span className="eyebrow">Quincaillerie allemande</span>
-                <p style={{ marginTop: "10px", fontSize: "13px", lineHeight: "1.74" }}>
+                <p style={{ marginTop: "10px", fontSize: "15.6px", lineHeight: "1.74" }}>
                   Pivots, paumelles et systèmes de fermeture anti-corrosion, garantie 10 ans
                   fabricant. Mécanismes éprouvés sur des millions de cycles — fiabilité totale sur
                   la durée.
@@ -622,17 +622,17 @@ export const CatalogPage: React.FC = () => {
                 <div style={{ display: "flex", flexDirection: "column", gap: "7px", marginTop: "14px" }}>
                   <div style={{ display: "flex", alignItems: "baseline", gap: "10px" }}>
                     <span style={{ color: "var(--gold)" }}>—</span>
-                    <span style={{ fontSize: "12.5px" }}>
+                    <span style={{ fontSize: "15px" }}>
                       Anti-corrosion — traitement inox ou laiton massif
                     </span>
                   </div>
                   <div style={{ display: "flex", alignItems: "baseline", gap: "10px" }}>
                     <span style={{ color: "var(--gold)" }}>—</span>
-                    <span style={{ fontSize: "12.5px" }}>Garantie 10 ans fabricant incluse</span>
+                    <span style={{ fontSize: "15px" }}>Garantie 10 ans fabricant incluse</span>
                   </div>
                   <div style={{ display: "flex", alignItems: "baseline", gap: "10px" }}>
                     <span style={{ color: "var(--gold)" }}>—</span>
-                    <span style={{ fontSize: "12.5px" }}>
+                    <span style={{ fontSize: "15px" }}>
                       Certifiée pour les formats pivots grande dimension
                     </span>
                   </div>
@@ -645,7 +645,7 @@ export const CatalogPage: React.FC = () => {
                 <div
                   style={{
                     fontFamily: "var(--serif)",
-                    fontSize: "28px",
+                    fontSize: "33.6px",
                     color: "var(--night)",
                     lineHeight: "1.2",
                     marginBottom: "16px",
@@ -656,13 +656,13 @@ export const CatalogPage: React.FC = () => {
                   <span style={{ fontStyle: "italic", color: "var(--gold)" }}>gratuits</span>
                 </div>
                 <div style={{ height: "1px", background: "var(--border)", marginBottom: "16px" }}></div>
-                <div style={{ fontFamily: "var(--serif)", fontSize: "18px", color: "var(--night)" }}>
+                <div style={{ fontFamily: "var(--serif)", fontSize: "21.6px", color: "var(--night)" }}>
                   Devis sous <span style={{ color: "var(--gold)" }}>48h</span>
                 </div>
                 <p
                   style={{
                     marginTop: "10px",
-                    fontSize: "12px",
+                    fontSize: "14.4px",
                     color: "var(--ink-light)",
                     lineHeight: "1.6",
                   }}
@@ -708,7 +708,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   marginTop: "13px",
                   color: "var(--cream)",
-                  fontSize: "36px",
+                  fontSize: "43.2px",
                   lineHeight: "1.1",
                   maxWidth: "420px",
                 }}
@@ -720,7 +720,7 @@ export const CatalogPage: React.FC = () => {
               <p
                 style={{
                   marginTop: "16px",
-                  fontSize: "13px",
+                  fontSize: "15.6px",
                   lineHeight: "1.76",
                   color: "rgba(249,248,246,.65)",
                   maxWidth: "370px",
@@ -741,7 +741,7 @@ export const CatalogPage: React.FC = () => {
                 <p
                   style={{
                     marginTop: "9px",
-                    fontSize: "12.5px",
+                    fontSize: "15px",
                     lineHeight: "1.7",
                     color: "rgba(249,248,246,.65)",
                   }}
@@ -768,7 +768,7 @@ export const CatalogPage: React.FC = () => {
                 <p
                   style={{
                     marginTop: "11px",
-                    fontSize: "13px",
+                    fontSize: "15.6px",
                     lineHeight: "1.72",
                     color: "rgba(249,248,246,.65)",
                   }}
@@ -791,19 +791,19 @@ export const CatalogPage: React.FC = () => {
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "11px" }}>
                   <div style={{ display: "flex", alignItems: "baseline", gap: "10px" }}>
                     <span style={{ color: "var(--gold)", flexShrink: 0 }}>—</span>
-                    <span style={{ fontSize: "12.5px", color: "rgba(249,248,246,.65)" }}>
+                    <span style={{ fontSize: "15px", color: "rgba(249,248,246,.65)" }}>
                       Paumelles invisibles encastrées dans le bâti
                     </span>
                   </div>
                   <div style={{ display: "flex", alignItems: "baseline", gap: "10px" }}>
                     <span style={{ color: "var(--gold)", flexShrink: 0 }}>—</span>
-                    <span style={{ fontSize: "12.5px", color: "rgba(249,248,246,.65)" }}>
+                    <span style={{ fontSize: "15px", color: "rgba(249,248,246,.65)" }}>
                       Serrures magnétiques — fermeture silencieuse
                     </span>
                   </div>
                   <div style={{ display: "flex", alignItems: "baseline", gap: "10px" }}>
                     <span style={{ color: "var(--gold)", flexShrink: 0 }}>—</span>
-                    <span style={{ fontSize: "12.5px", color: "rgba(249,248,246,.65)" }}>
+                    <span style={{ fontSize: "15px", color: "rgba(249,248,246,.65)" }}>
                       Canons sécuritaires — zéro hardware visible
                     </span>
                   </div>
@@ -849,7 +849,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7.5px",
+                  fontSize: "9px",
                   letterSpacing: ".2em",
                   color: "rgba(249,248,246,.32)",
                 }}
@@ -860,7 +860,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7.5px",
+                  fontSize: "9px",
                   letterSpacing: ".2em",
                   color: "rgba(249,248,246,.32)",
                 }}
@@ -871,7 +871,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7.5px",
+                  fontSize: "9px",
                   letterSpacing: ".2em",
                   color: "rgba(249,248,246,.32)",
                 }}
@@ -882,7 +882,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7.5px",
+                  fontSize: "9px",
                   letterSpacing: ".2em",
                   color: "rgba(249,248,246,.32)",
                 }}
@@ -893,7 +893,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7.5px",
+                  fontSize: "9px",
                   letterSpacing: ".2em",
                   color: "rgba(249,248,246,.32)",
                 }}
@@ -936,7 +936,7 @@ export const CatalogPage: React.FC = () => {
                 <span className="eyebrow">
                   Placage 1<sup>er</sup> choix
                 </span>
-                <p style={{ marginTop: "10px", fontSize: "13px", lineHeight: "1.74" }}>
+                <p style={{ marginTop: "10px", fontSize: "15.6px", lineHeight: "1.74" }}>
                   Feuilles de placage sélectionnées parmi les meilleures au monde. Symétrie des
                   veines, continuité du grain, épaisseur et densité contrôlées — la signature
                   visuelle de chaque porte.
@@ -951,7 +951,7 @@ export const CatalogPage: React.FC = () => {
               />
               <div style={{ marginTop: "20px" }}>
                 <span className="eyebrow">100% bois naturel</span>
-                <p style={{ marginTop: "10px", fontSize: "13px", lineHeight: "1.74" }}>
+                <p style={{ marginTop: "10px", fontSize: "15.6px", lineHeight: "1.74" }}>
                   Portes résistantes à l’humidité, fabriquées en bois massif naturel. Aucune
                   déformation dans le temps — même en salle de bain ou en couloir exposé.
                 </p>
@@ -982,7 +982,7 @@ export const CatalogPage: React.FC = () => {
             <p
               style={{
                 marginTop: "12px",
-                fontSize: "11.5px",
+                fontSize: "13.8px",
                 color: "var(--ink-light)",
                 fontFamily: "var(--serif)",
                 fontStyle: "italic",
@@ -1009,7 +1009,7 @@ export const CatalogPage: React.FC = () => {
               />
               <div>
                 <span className="eyebrow">Certification FSC</span>
-                <p style={{ marginTop: "10px", fontSize: "13px", lineHeight: "1.72" }}>
+                <p style={{ marginTop: "10px", fontSize: "15.6px", lineHeight: "1.72" }}>
                   Nos matières premières bois proviennent de forêts gérées durablement, certifiées{" "}
                   <strong style={{ fontWeight: 400, color: "var(--night)" }}>FSC</strong> (Forest
                   Stewardship Council). Un engagement environnemental concret, traçable à chaque
@@ -1053,7 +1053,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   marginTop: "13px",
                   color: "var(--cream)",
-                  fontSize: "34px",
+                  fontSize: "40.8px",
                   lineHeight: "1.1",
                   maxWidth: "420px",
                 }}
@@ -1063,7 +1063,7 @@ export const CatalogPage: React.FC = () => {
               <p
                 style={{
                   marginTop: "16px",
-                  fontSize: "13px",
+                  fontSize: "15.6px",
                   lineHeight: "1.76",
                   color: "rgba(249,248,246,.65)",
                   maxWidth: "370px",
@@ -1083,7 +1083,7 @@ export const CatalogPage: React.FC = () => {
                 <p
                   style={{
                     marginTop: "9px",
-                    fontSize: "12.5px",
+                    fontSize: "15px",
                     lineHeight: "1.7",
                     color: "rgba(249,248,246,.65)",
                   }}
@@ -1137,7 +1137,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7px",
+                  fontSize: "8.4px",
                   letterSpacing: ".18em",
                   color: "rgba(249,248,246,.32)",
                 }}
@@ -1148,7 +1148,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7px",
+                  fontSize: "8.4px",
                   letterSpacing: ".18em",
                   color: "rgba(249,248,246,.32)",
                 }}
@@ -1159,7 +1159,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7px",
+                  fontSize: "8.4px",
                   letterSpacing: ".18em",
                   color: "rgba(249,248,246,.32)",
                 }}
@@ -1170,7 +1170,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7px",
+                  fontSize: "8.4px",
                   letterSpacing: ".18em",
                   color: "rgba(249,248,246,.32)",
                 }}
@@ -1181,7 +1181,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7px",
+                  fontSize: "8.4px",
                   letterSpacing: ".18em",
                   color: "rgba(249,248,246,.32)",
                 }}
@@ -1201,7 +1201,7 @@ export const CatalogPage: React.FC = () => {
                 <p
                   style={{
                     marginTop: "10px",
-                    fontSize: "12.5px",
+                    fontSize: "15px",
                     lineHeight: "1.7",
                     color: "rgba(249,248,246,.65)",
                   }}
@@ -1216,7 +1216,7 @@ export const CatalogPage: React.FC = () => {
                 <p
                   style={{
                     marginTop: "10px",
-                    fontSize: "12.5px",
+                    fontSize: "15px",
                     lineHeight: "1.7",
                     color: "rgba(249,248,246,.65)",
                   }}
@@ -1259,30 +1259,30 @@ export const CatalogPage: React.FC = () => {
               />
               <div style={{ marginTop: "18px" }}>
                 <span className="eyebrow">MDF européen certifié</span>
-                <p style={{ marginTop: "10px", fontSize: "13px", lineHeight: "1.74" }}>
+                <p style={{ marginTop: "10px", fontSize: "15.6px", lineHeight: "1.74" }}>
                   Panneaux MDF importés d’Europe, certifiés aux normes européennes E1 — qualité and
                   durabilité garanties. Densité homogène, aucune déformation dans le temps.
                 </p>
                 <div style={{ marginTop: "14px" }}>
-                  <span className="eyebrow" style={{ fontSize: "8px" }}>
+                  <span className="eyebrow" style={{ fontSize: "9.6px" }}>
                     Bases disponibles
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "6px", marginTop: "9px" }}>
                     <div style={{ display: "flex", gap: "10px", alignItems: "baseline" }}>
                       <span style={{ color: "var(--gold)" }}>—</span>
-                      <span style={{ fontSize: "12.5px" }}>MDF standard</span>
+                      <span style={{ fontSize: "15px" }}>MDF standard</span>
                     </div>
                     <div style={{ display: "flex", gap: "10px", alignItems: "baseline" }}>
                       <span style={{ color: "var(--gold)" }}>—</span>
-                      <span style={{ fontSize: "12.5px" }}>Latte</span>
+                      <span style={{ fontSize: "15px" }}>Latte</span>
                     </div>
                     <div style={{ display: "flex", gap: "10px", alignItems: "baseline" }}>
                       <span style={{ color: "var(--gold)" }}>—</span>
-                      <span style={{ fontSize: "12.5px" }}>Isoplane</span>
+                      <span style={{ fontSize: "15px" }}>Isoplane</span>
                     </div>
                     <div style={{ display: "flex", gap: "10px", alignItems: "baseline" }}>
                       <span style={{ color: "var(--gold)" }}>—</span>
-                      <span style={{ fontSize: "12.5px" }}>Bois massif</span>
+                      <span style={{ fontSize: "15px" }}>Bois massif</span>
                     </div>
                   </div>
                 </div>
@@ -1297,7 +1297,7 @@ export const CatalogPage: React.FC = () => {
               />
               <div style={{ marginTop: "18px" }}>
                 <span className="eyebrow">Quincaillerie Blum</span>
-                <p style={{ marginTop: "10px", fontSize: "13px", lineHeight: "1.74" }}>
+                <p style={{ marginTop: "10px", fontSize: "15.6px", lineHeight: "1.74" }}>
                   Silencieuse, garantie 20 ans. Glissières, charnières and systèmes de tirage Blum
                   — fiabilité prouvée sur des millions de cycles, fermeture douce sur chaque
                   mouvement.
@@ -1321,7 +1321,7 @@ export const CatalogPage: React.FC = () => {
                 <div
                   style={{
                     fontFamily: "var(--serif)",
-                    fontSize: "26px",
+                    fontSize: "31.2px",
                     color: "var(--night)",
                     lineHeight: "1.2",
                     marginBottom: "14px",
@@ -1332,13 +1332,13 @@ export const CatalogPage: React.FC = () => {
                   <span style={{ fontStyle: "italic", color: "var(--gold)" }}>gratuits</span>
                 </div>
                 <div style={{ height: "1px", background: "var(--border)", marginBottom: "14px" }}></div>
-                <div style={{ fontFamily: "var(--serif)", fontSize: "16px", color: "var(--night)" }}>
+                <div style={{ fontFamily: "var(--serif)", fontSize: "19.2px", color: "var(--night)" }}>
                   Devis sous <span style={{ color: "var(--gold)" }}>48h</span>
                 </div>
                 <p
                   style={{
                     marginTop: "9px",
-                    fontSize: "11.5px",
+                    fontSize: "13.8px",
                     color: "var(--ink-light)",
                     lineHeight: "1.6",
                   }}
@@ -1383,7 +1383,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   marginTop: "13px",
                   color: "var(--cream)",
-                  fontSize: "34px",
+                  fontSize: "40.8px",
                   lineHeight: "1.1",
                   maxWidth: "400px",
                 }}
@@ -1394,7 +1394,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   marginTop: "14px",
                   fontFamily: "var(--mono)",
-                  fontSize: "9px",
+                  fontSize: "10.8px",
                   letterSpacing: ".22em",
                   color: "var(--gold)",
                 }}
@@ -1404,7 +1404,7 @@ export const CatalogPage: React.FC = () => {
               <p
                 style={{
                   marginTop: "12px",
-                  fontSize: "13px",
+                  fontSize: "15.6px",
                   lineHeight: "1.76",
                   color: "rgba(249,248,246,.65)",
                   maxWidth: "360px",
@@ -1426,7 +1426,7 @@ export const CatalogPage: React.FC = () => {
                 <p
                   style={{
                     marginTop: "9px",
-                    fontSize: "12.5px",
+                    fontSize: "15px",
                     lineHeight: "1.7",
                     color: "rgba(249,248,246,.65)",
                   }}
@@ -1480,7 +1480,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7px",
+                  fontSize: "8.4px",
                   letterSpacing: ".16em",
                   color: "rgba(249,248,246,.3)",
                 }}
@@ -1491,7 +1491,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7px",
+                  fontSize: "8.4px",
                   letterSpacing: ".16em",
                   color: "rgba(249,248,246,.3)",
                 }}
@@ -1502,7 +1502,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7px",
+                  fontSize: "8.4px",
                   letterSpacing: ".16em",
                   color: "rgba(249,248,246,.3)",
                 }}
@@ -1513,7 +1513,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7px",
+                  fontSize: "8.4px",
                   letterSpacing: ".16em",
                   color: "rgba(249,248,246,.3)",
                 }}
@@ -1524,7 +1524,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7px",
+                  fontSize: "8.4px",
                   letterSpacing: ".16em",
                   color: "rgba(249,248,246,.3)",
                 }}
@@ -1571,7 +1571,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7px",
+                  fontSize: "8.4px",
                   letterSpacing: ".16em",
                   color: "rgba(249,248,246,.3)",
                 }}
@@ -1582,7 +1582,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7px",
+                  fontSize: "8.4px",
                   letterSpacing: ".16em",
                   color: "rgba(249,248,246,.3)",
                 }}
@@ -1593,7 +1593,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7px",
+                  fontSize: "8.4px",
                   letterSpacing: ".16em",
                   color: "rgba(249,248,246,.3)",
                 }}
@@ -1604,7 +1604,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7px",
+                  fontSize: "8.4px",
                   letterSpacing: ".16em",
                   color: "rgba(249,248,246,.3)",
                 }}
@@ -1615,7 +1615,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   textAlign: "center",
                   fontFamily: "var(--mono)",
-                  fontSize: "7px",
+                  fontSize: "8.4px",
                   letterSpacing: ".16em",
                   color: "rgba(249,248,246,.3)",
                 }}
@@ -1656,27 +1656,27 @@ export const CatalogPage: React.FC = () => {
               />
               <div style={{ marginTop: "16px" }}>
                 <span className="eyebrow">Panneaux certifiés européens</span>
-                <p style={{ marginTop: "9px", fontSize: "13px", lineHeight: "1.74" }}>
+                <p style={{ marginTop: "9px", fontSize: "15.6px", lineHeight: "1.74" }}>
                   Egger, Alvic and Finsa — les références européennes de la menuiserie haut de
                   gamme. Certifiés normes européennes, densité homogène, stabilité dimensionnelle
                   garantie.
                 </p>
                 <div style={{ marginTop: "13px" }}>
-                  <span className="eyebrow" style={{ fontSize: "8px" }}>
+                  <span className="eyebrow" style={{ fontSize: "9.6px" }}>
                     3 niveaux de finition
                   </span>
                   <div style={{ display: "flex", flexDirection: "column", gap: "6px", marginTop: "9px" }}>
                     <div style={{ display: "flex", gap: "10px", alignItems: "baseline" }}>
                       <span style={{ color: "var(--gold)" }}>—</span>
-                      <span style={{ fontSize: "12.5px" }}>MDF gloss</span>
+                      <span style={{ fontSize: "15px" }}>MDF gloss</span>
                     </div>
                     <div style={{ display: "flex", gap: "10px", alignItems: "baseline" }}>
                       <span style={{ color: "var(--gold)" }}>—</span>
-                      <span style={{ fontSize: "12.5px" }}>MDF high gloss</span>
+                      <span style={{ fontSize: "15px" }}>MDF high gloss</span>
                     </div>
                     <div style={{ display: "flex", gap: "10px", alignItems: "baseline" }}>
                       <span style={{ color: "var(--gold)" }}>—</span>
-                      <span style={{ fontSize: "12.5px" }}>MDF extra matt</span>
+                      <span style={{ fontSize: "15px" }}>MDF extra matt</span>
                     </div>
                   </div>
                 </div>
@@ -1694,21 +1694,21 @@ export const CatalogPage: React.FC = () => {
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "9px" }}>
                   <div style={{ display: "flex", gap: "10px", alignItems: "baseline" }}>
                     <span style={{ color: "var(--gold)", flexShrink: 0 }}>—</span>
-                    <span style={{ fontSize: "12.5px" }}>
+                    <span style={{ fontSize: "15px" }}>
                       Quincaillerie Blum — silencieuse, garantie 20 ans
                     </span>
                   </div>
                   <div style={{ display: "flex", gap: "10px", alignItems: "baseline" }}>
                     <span style={{ color: "var(--gold)", flexShrink: 0 }}>—</span>
-                    <span style={{ fontSize: "12.5px" }}>Socle bois sapin traité contre l’eau</span>
+                    <span style={{ fontSize: "15px" }}>Socle bois sapin traité contre l’eau</span>
                   </div>
                   <div style={{ display: "flex", gap: "10px", alignItems: "baseline" }}>
                     <span style={{ color: "var(--gold)", flexShrink: 0 }}>—</span>
-                    <span style={{ fontSize: "12.5px" }}>Bords MDF avec profilé PVC</span>
+                    <span style={{ fontSize: "15px" }}>Bords MDF avec profilé PVC</span>
                   </div>
                   <div style={{ display: "flex", gap: "10px", alignItems: "baseline" }}>
                     <span style={{ color: "var(--gold)", flexShrink: 0 }}>—</span>
-                    <span style={{ fontSize: "12.5px" }}>
+                    <span style={{ fontSize: "15px" }}>
                       Traitement exclusif Hismar anti-humidité
                     </span>
                   </div>
@@ -1722,7 +1722,7 @@ export const CatalogPage: React.FC = () => {
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "36px", alignItems: "center" }}>
               <div>
                 <span className="eyebrow">Machines SCM italiennes</span>
-                <p style={{ marginTop: "10px", fontSize: "13px", lineHeight: "1.74" }}>
+                <p style={{ marginTop: "10px", fontSize: "15.6px", lineHeight: "1.74" }}>
                   Scie panneau and robot bande de chant SCM, Italie — précision millimétrique sur
                   chaque pièce. Placages and chants collés à très haute chaleur and pression :
                   liaison permanente, zéro décollement.
@@ -1740,7 +1740,7 @@ export const CatalogPage: React.FC = () => {
                 <div
                   style={{
                     fontFamily: "var(--serif)",
-                    fontSize: "26px",
+                    fontSize: "31.2px",
                     color: "var(--night)",
                     lineHeight: "1.2",
                     marginBottom: "14px",
@@ -1751,13 +1751,13 @@ export const CatalogPage: React.FC = () => {
                   <span style={{ fontStyle: "italic", color: "var(--gold)" }}>gratuits</span>
                 </div>
                 <div style={{ height: "1px", background: "var(--border)", marginBottom: "14px" }}></div>
-                <div style={{ fontFamily: "var(--serif)", fontSize: "16px", color: "var(--night)" }}>
+                <div style={{ fontFamily: "var(--serif)", fontSize: "19.2px", color: "var(--night)" }}>
                   Devis sous <span style={{ color: "var(--gold)" }}>48h</span>
                 </div>
                 <p
                   style={{
                     marginTop: "9px",
-                    fontSize: "11.5px",
+                    fontSize: "13.8px",
                     color: "var(--ink-light)",
                     lineHeight: "1.6",
                   }}
@@ -1796,7 +1796,7 @@ export const CatalogPage: React.FC = () => {
                 style={{
                   fontFamily: "var(--serif)",
                   fontStyle: "italic",
-                  fontSize: "16px",
+                  fontSize: "19.2px",
                   color: "var(--gold)",
                 }}
               >
@@ -1917,7 +1917,7 @@ export const CatalogPage: React.FC = () => {
               style={{
                 fontFamily: "var(--serif)",
                 fontStyle: "italic",
-                fontSize: "13px",
+                fontSize: "15.6px",
                 color: "rgba(249,248,246,.35)",
               }}
             >
