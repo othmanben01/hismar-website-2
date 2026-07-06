@@ -1880,7 +1880,9 @@ export const CatalogPage: React.FC = () => {
             </p>
           </div>
 
-          <ContactForm />
+          <div className={styles.bodyPad}>
+            <ContactForm />
+          </div>
 
           <div className={styles.contactGrid}>
             <div className={styles.cell}>
