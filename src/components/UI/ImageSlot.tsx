@@ -10,6 +10,9 @@ interface ImageSlotProps {
   defaultLabel: string;
   style?: React.CSSProperties;
   className?: string;
+  objectFit?: React.CSSProperties["objectFit"];
+  objectPosition?: React.CSSProperties["objectPosition"];
+  imgStyle?: React.CSSProperties;
 }
 
 export const ImageSlot: React.FC<ImageSlotProps> = ({
@@ -17,6 +20,9 @@ export const ImageSlot: React.FC<ImageSlotProps> = ({
   defaultLabel,
   style = {},
   className = "",
+  objectFit,
+  objectPosition,
+  imgStyle = {},
 }) => {
   const { slots, setActiveSlot, updateSlotImage } = useImageSlots();
   const [isDragOver, setIsDragOver] = useState(false);
@@ -94,12 +100,15 @@ export const ImageSlot: React.FC<ImageSlotProps> = ({
   // Combined styles for sizing
   const containerStyle: React.CSSProperties = {
     ...style,
+    overflow: "hidden", // Ensures zoomed images don't spill out of the container
   };
 
-  const imageStyle: React.CSSProperties = hasImage
+  const combinedImageStyle: React.CSSProperties = hasImage
     ? {
-        objectFit: slotData.fit || "cover",
-        objectPosition: slotData.pos || "50% 50%",
+        objectFit: objectFit || slotData.fit || "cover",
+        objectPosition: objectPosition || slotData.pos || "50% 50%",
+        transform: `scale(${slotData.scale ?? 1})`,
+        ...imgStyle,
       }
     : {};
 
@@ -133,7 +142,7 @@ export const ImageSlot: React.FC<ImageSlotProps> = ({
         <img
           src={slotData.src}
           alt={defaultLabel}
-          style={imageStyle}
+          style={combinedImageStyle}
           className={styles.image}
           draggable="false"
         />

@@ -62,7 +62,8 @@ export const PourquoiSection: React.FC = () => {
         <ImageSlot
           id="p2-photo"
           defaultLabel="PHOTO — RÉALISATION INTÉRIEUR VILLA"
-          style={{ width: "100%", height: "240px" }}
+          style={{ width: "100%", height: "380px" }}
+          objectFit="contain"
         />
       </div>
       <div className={styles.pageFoot}>

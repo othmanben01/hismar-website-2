@@ -54,6 +54,7 @@ export const PortesEntree2Section: React.FC = () => {
           }}
         >
           <TextFeaturesGrid
+            theme="cream"
             features={[
               {
                 title: "Quincaillerie allemande",

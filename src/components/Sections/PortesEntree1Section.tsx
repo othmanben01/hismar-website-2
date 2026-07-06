@@ -26,7 +26,7 @@ export const PortesEntree1Section: React.FC = () => {
         style={{
           paddingTop: "32px",
           display: "grid",
-          gridTemplateColumns: "1fr 252px",
+          gridTemplateColumns: "1fr 1fr",
           gap: "36px",
           alignItems: "start",
         }}
@@ -68,7 +68,7 @@ export const PortesEntree1Section: React.FC = () => {
         <ImageSlot
           id="pe-hero"
           defaultLabel="PHOTO — PORTE PIVOT SOL-PLAFOND"
-          style={{ width: "100%", height: "370px" }}
+          style={{ width: "100%", height: "58vh", minHeight: "420px" }}
         />
       </div>
 

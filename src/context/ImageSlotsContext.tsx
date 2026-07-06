@@ -5,12 +5,14 @@ import React, { createContext, useContext, useState, useEffect, useCallback } fr
 export interface SlotPreferences {
   fit: "cover" | "contain" | "fill";
   pos: string; // e.g., "50% 50%"
+  scale?: number;
 }
 
 export interface SlotData {
   src?: string;
   fit?: "cover" | "contain" | "fill";
   pos?: string;
+  scale?: number;
 }
 
 export interface SlotRect {
@@ -63,6 +65,7 @@ export const ImageSlotsProvider: React.FC<ImageSlotsProviderProps> = ({
         src: imgData?.src || undefined,
         fit: prefData?.fit || "cover",
         pos: prefData?.pos || "50% 50%",
+        scale: prefData?.scale || 1,
       };
     } catch (e) {
       console.warn(`Error reading slot ${id} from storage:`, e);
@@ -91,6 +94,7 @@ export const ImageSlotsProvider: React.FC<ImageSlotsProviderProps> = ({
               src: imgData.src,
               fit: prefData?.fit || loadedSlots[id]?.fit || "cover",
               pos: prefData?.pos || loadedSlots[id]?.pos || "50% 50%",
+              scale: prefData?.scale || loadedSlots[id]?.scale || 1,
             };
           }
         }
@@ -203,6 +207,7 @@ export const ImageSlotsProvider: React.FC<ImageSlotsProviderProps> = ({
       const newPrefs = {
         fit: prefs.fit || current.fit || "cover",
         pos: prefs.pos || current.pos || "50% 50%",
+        scale: prefs.scale !== undefined ? prefs.scale : (current.scale || 1),
       };
       return {
         ...prev,

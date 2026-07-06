@@ -5,13 +5,13 @@
     "pos": "50% 50%"
   },
   "p2-photo": {
-    "src": "/uploads/p2-photo.jpg?v=1783341094075",
+    "src": "/uploads/p2-photo.jpg?v=1783364084549",
     "fit": "cover",
-    "pos": "50% 100%"
+    "pos": "50% 50%"
   },
   "p3-machine": {
     "src": "/uploads/p3-machine.jpg",
-    "fit": "cover",
+    "fit": "contain",
     "pos": "50% 50%"
   },
   "p3-atelier": {
@@ -57,7 +57,7 @@
   "pe-hero": {
     "src": "/uploads/pe-hero.jpg",
     "fit": "cover",
-    "pos": "50% 50%"
+    "pos": "0% 50%"
   },
   "pe-fin-1": {
     "src": "/uploads/pe-fin-1.jpg",
@@ -136,7 +136,7 @@
   },
   "pi-fsc": {
     "src": "/uploads/pi-fsc.jpg",
-    "fit": "cover",
+    "fit": "contain",
     "pos": "50% 50%"
   },
   "pl-hero": {
@@ -252,6 +252,11 @@
   "cu-scm": {
     "src": "/uploads/cu-scm.jpg?v=1783085129406",
     "fit": "cover",
+    "pos": "50% 50%"
+  },
+  "pi-brand-3": {
+    "src": "/uploads/pi-brand-3.jpg?v=1783363957336",
+    "fit": "contain",
     "pos": "50% 50%"
   }
 }

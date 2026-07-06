@@ -60,11 +60,7 @@
   transition: object-fit 0.15s ease, object-position 0.15s ease;
 }
 
-@media (max-width: 767px) {
-  .slot {
-    max-height: 220px !important;
-  }
-}
+
 
 @media print {
   .slot {

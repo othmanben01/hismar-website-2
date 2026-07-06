@@ -21,7 +21,7 @@ export const AteliersSection: React.FC = () => {
             style={{
               marginTop: "28px",
               display: "grid",
-              gridTemplateColumns: "1fr 240px",
+              gridTemplateColumns: "1fr 1fr",
               gap: "36px",
               alignItems: "start",
             }}
@@ -56,7 +56,7 @@ export const AteliersSection: React.FC = () => {
             <ImageSlot
               id="p3-machine"
               defaultLabel="PHOTO — MACHINE / ATELIER"
-              style={{ width: "100%", height: "300px" }}
+              style={{ width: "100%", height: "58vh", minHeight: "420px" }}
             />
           </div>
           <div className={styles.bodyPad} style={{ marginTop: "38px" }}>
@@ -66,11 +66,11 @@ export const AteliersSection: React.FC = () => {
               subtitle="Un processus de production intégré, de la découpe numérique au contrôle qualité final."
             />
           </div>
-          <div className={styles.bodyPad} style={{ marginTop: "36px" }}>
+          <div className={styles.bodyPad} style={{ marginTop: "36px", display: "flex", justifyContent: "center" }}>
             <ImageSlot
               id="p3-atelier"
               defaultLabel="PHOTO — VUE D'ENSEMBLE DES ATELIERS"
-              style={{ width: "100%", height: "240px" }}
+              style={{ width: "70%", height: "240px" }}
             />
           </div>
           <div className={styles.pageFoot}>

@@ -26,7 +26,7 @@ export const Placards1Section: React.FC = () => {
         style={{
           paddingTop: "32px",
           display: "grid",
-          gridTemplateColumns: "1fr 252px",
+          gridTemplateColumns: "1fr 1fr",
           gap: "36px",
           alignItems: "start",
         }}
@@ -68,7 +68,7 @@ export const Placards1Section: React.FC = () => {
         <ImageSlot
           id="pl-hero"
           defaultLabel="PHOTO — PLACARD EFFET MURAL SOL-PLAFOND"
-          style={{ width: "100%", height: "360px" }}
+          style={{ width: "100%", height: "58vh", minHeight: "420px" }}
         />
       </div>
 

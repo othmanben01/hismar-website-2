@@ -17,7 +17,7 @@ export const CategoryFooter = ({ title }: { title: string }) => (
 );
 
 export const CategoryHeroCTAs = () => (
-  <div className={styles.coverCtas} style={{ marginTop: "32px", justifyContent: "flex-start" }}>
+  <div className={styles.coverCtas} style={{ marginTop: "32px", justifyContent: "flex-start", padding: 0, marginLeft: 0 }}>
     <TrackedLink
       className={styles.btnWa}
       eventName="contact_whatsapp"
@@ -68,46 +68,51 @@ export const FeatureHighlight = ({ title, description }: { title: string; descri
 
 export const TextFeaturesGrid = ({
   features,
+  theme = "night",
 }: {
   features: { title: string; description: React.ReactNode; list?: string[] }[];
-}) => (
-  <div
-    style={{
-      display: "grid",
-      gridTemplateColumns: `repeat(${features.length}, 1fr)`,
-      gap: "24px",
-      alignItems: "start",
-    }}
-  >
-    {features.map((f, i) => (
-      <div key={i}>
-        <span className="eyebrow">{f.title}</span>
-        {f.description && (
-          <div
-            style={{
-              marginTop: "10px",
-              fontSize: "15px",
-              lineHeight: "1.7",
-              color: "rgba(249,248,246,.65)",
-            }}
-          >
-            {f.description}
-          </div>
-        )}
-        {f.list && f.list.length > 0 && (
-          <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "11px" }}>
-            {f.list.map((item, j) => (
-              <div key={j} style={{ display: "flex", alignItems: "baseline", gap: "10px" }}>
-                <span style={{ color: "var(--gold)", flexShrink: 0 }}>—</span>
-                <span style={{ fontSize: "15px", color: "rgba(249,248,246,.65)" }}>{item}</span>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-    ))}
-  </div>
-);
+  theme?: "night" | "cream";
+}) => {
+  const textColor = theme === "night" ? "rgba(249,248,246,.65)" : undefined;
+  return (
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: `repeat(${features.length}, 1fr)`,
+        gap: "24px",
+        alignItems: "start",
+      }}
+    >
+      {features.map((f, i) => (
+        <div key={i}>
+          <span className="eyebrow">{f.title}</span>
+          {f.description && (
+            <div
+              style={{
+                marginTop: "10px",
+                fontSize: "15px",
+                lineHeight: "1.7",
+                color: textColor,
+              }}
+            >
+              {f.description}
+            </div>
+          )}
+          {f.list && f.list.length > 0 && (
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "11px" }}>
+              {f.list.map((item, j) => (
+                <div key={j} style={{ display: "flex", alignItems: "baseline", gap: "10px" }}>
+                  <span style={{ color: "var(--gold)", flexShrink: 0 }}>—</span>
+                  <span style={{ fontSize: "15px", color: textColor }}>{item}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+};
 
 export const ImageFeaturesGrid = ({
   images,

@@ -25,7 +25,7 @@ export const Cuisines1Section: React.FC = () => {
         style={{
           paddingTop: "30px",
           display: "grid",
-          gridTemplateColumns: "1fr 252px",
+          gridTemplateColumns: "1fr 1fr",
           gap: "36px",
           alignItems: "start",
         }}
@@ -79,7 +79,7 @@ export const Cuisines1Section: React.FC = () => {
         <ImageSlot
           id="cu-hero"
           defaultLabel="PHOTO — CUISINE RÉALISATION VILLA"
-          style={{ width: "100%", height: "360px" }}
+          style={{ width: "100%", height: "58vh", minHeight: "420px" }}
         />
       </div>
 

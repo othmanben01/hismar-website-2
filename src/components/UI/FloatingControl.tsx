@@ -157,6 +157,36 @@ export const FloatingControl: React.FC = () => {
 
       <div className={styles.separator} />
 
+      {/* Zoom / Scale Options */}
+      <div className={styles.section}>
+        <span className={styles.label}>ZOOM</span>
+        <div className={styles.buttonRow}>
+          <button
+            className={styles.btn}
+            onMouseDown={(e) => {
+              e.preventDefault();
+              if (visibleSlotId) updateSlotPrefs(visibleSlotId, { scale: Math.max(0.1, (slotData?.scale || 1) - 0.1) });
+            }}
+          >
+            -
+          </button>
+          <span className={styles.label} style={{ margin: "0 10px" }}>
+            {Math.round((slotData?.scale || 1) * 100)}%
+          </span>
+          <button
+            className={styles.btn}
+            onMouseDown={(e) => {
+              e.preventDefault();
+              if (visibleSlotId) updateSlotPrefs(visibleSlotId, { scale: Math.min(3.0, (slotData?.scale || 1) + 0.1) });
+            }}
+          >
+            +
+          </button>
+        </div>
+      </div>
+
+      <div className={styles.separator} />
+
       {/* Alignment Grid Options */}
       <div className={styles.section}>
         <span className={styles.label}>POSITION</span>

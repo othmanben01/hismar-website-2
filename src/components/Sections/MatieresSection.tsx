@@ -52,17 +52,17 @@ export const MatieresSection: React.FC = () => {
               <ImageSlot
                 id="p4-cert-1"
                 defaultLabel="LOGO CERTIFICAT"
-                style={{ width: "100%", height: "130px" }}
+                style={{ width: "75%", height: "260px", margin: "0 auto" }}
               />
               <ImageSlot
                 id="p4-cert-2"
                 defaultLabel="LOGO CERTIFICAT"
-                style={{ width: "100%", height: "130px" }}
+                style={{ width: "75%", height: "260px", margin: "0 auto" }}
               />
               <ImageSlot
                 id="p4-cert-3"
                 defaultLabel="LOGO CERTIFICAT"
-                style={{ width: "100%", height: "130px" }}
+                style={{ width: "75%", height: "260px", margin: "0 auto" }}
               />
             </div>
           </div>
