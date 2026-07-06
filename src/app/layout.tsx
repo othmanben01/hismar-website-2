@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import fs from "fs";
+import path from "path";
+import { Providers } from "@/components/Providers";
 import "./globals.css";
 
 const GA_MEASUREMENT_ID = "G-DPBNLCDD0V";
@@ -17,11 +20,26 @@ export const metadata: Metadata = {
   }
 };
 
+function getInitialSlots(): Record<string, any> {
+  const configFile = path.join(process.cwd(), "slots-config.json");
+  try {
+    if (fs.existsSync(configFile)) {
+      const data = fs.readFileSync(configFile, "utf8");
+      return JSON.parse(data);
+    }
+  } catch (err) {
+    console.error("Error reading slots-config.json in layout.tsx:", err);
+  }
+  return {};
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const initialSlots = getInitialSlots();
+
   return (
     <html lang="fr" suppressHydrationWarning>
       <head>
@@ -42,7 +60,9 @@ export default function RootLayout({
       </head>
       <body suppressHydrationWarning>
         <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
-        {children}
+        <Providers initialSlots={initialSlots}>
+          {children}
+        </Providers>
       </body>
     </html>
   );

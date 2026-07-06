@@ -1,0 +1,16 @@
+export { CoverSection } from './CoverSection';
+export { PourquoiSection } from './PourquoiSection';
+export { AteliersSection } from './AteliersSection';
+export { MatieresSection } from './MatieresSection';
+export { RealisationsSection } from './RealisationsSection';
+export { PortesEntree1Section } from './PortesEntree1Section';
+export { PortesEntree2Section } from './PortesEntree2Section';
+export { PortesInterieures1Section } from './PortesInterieures1Section';
+export { PortesInterieures2Section } from './PortesInterieures2Section';
+export { Placards1Section } from './Placards1Section';
+export { Placards2Section } from './Placards2Section';
+export { Cuisines1Section } from './Cuisines1Section';
+export { Cuisines2Section } from './Cuisines2Section';
+export { ProcessusSection } from './ProcessusSection';
+export { CertificationsSection } from './CertificationsSection';
+export { ContactSection } from './ContactSection';

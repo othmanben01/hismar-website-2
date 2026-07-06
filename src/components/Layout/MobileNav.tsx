@@ -21,15 +21,15 @@ export const MobileNav: React.FC = () => {
   useClickOutside(menuRef, closeMenu);
 
   const menuLinks = [
-    { href: "#accueil", label: "Accueil" },
-    { href: "#pourquoi", label: "Pourquoi Hismar" },
-    { href: "#ateliers", label: "Nos ateliers" },
-    { href: "#entree", label: "Portes d’entrée" },
-    { href: "#interieur", label: "Portes intérieures" },
-    { href: "#placards", label: "Placards & dressings" },
-    { href: "#cuisines", label: "Cuisines" },
-    { href: "#processus", label: "Processus" },
-    { href: "#contact", label: "Contact" },
+    { href: "/#accueil", label: "Accueil" },
+    { href: "/#pourquoi", label: "Pourquoi Hismar" },
+    { href: "/#ateliers", label: "Nos ateliers" },
+    { href: "/portes-entree", label: "Portes d’entrée" },
+    { href: "/portes-interieures", label: "Portes intérieures" },
+    { href: "/placards", label: "Placards & dressings" },
+    { href: "/cuisines", label: "Cuisines" },
+    { href: "/#processus", label: "Processus" },
+    { href: "/#contact", label: "Contact" },
     { href: "https://wa.me/212662177069", label: "WhatsApp", isExternal: true },
   ];
 

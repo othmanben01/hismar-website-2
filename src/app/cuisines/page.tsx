@@ -1,64 +1,49 @@
-"use client";
-
 import React from "react";
+import type { Metadata } from "next";
 import styles from "@/app/page.module.css";
 import { MobileNav } from "@/components/Layout";
-import { FloatingControl } from "@/components/UI";
+import { FloatingControl, TrackedLink } from "@/components/UI";
 import {
-  CoverSection,
+  Cuisines1Section,
+  Cuisines2Section,
   PourquoiSection,
   AteliersSection,
   MatieresSection,
-  RealisationsSection,
-  PortesEntree1Section,
-  PortesEntree2Section,
-  PortesInterieures1Section,
-  PortesInterieures2Section,
-  Placards1Section,
-  Placards2Section,
-  Cuisines1Section,
-  Cuisines2Section,
   ProcessusSection,
   CertificationsSection,
   ContactSection,
+  RealisationsSection,
 } from "@/components/Sections";
-import { TrackedLink } from "@/components/UI";
 
-export const CatalogPage: React.FC = () => {
+export const metadata: Metadata = {
+  title: "Cuisines sur Mesure — Hismar Menuiserie Casablanca",
+  description: "Conception, fabrication et installation de cuisines sur mesure. Design contemporain, bois certifié et mécanismes Blum.",
+};
+
+export default function CuisinesPage() {
   return (
     <>
-      {/* Navigation Header */}
       <MobileNav />
 
-      {/* Main Document slides */}
       <div className={styles.doc}>
-        <CoverSection />
-        <PourquoiSection />
-        <AteliersSection />
-        <MatieresSection />
-        <RealisationsSection />
-        
-        <PortesEntree1Section />
-        <PortesEntree2Section />
-        
-        <PortesInterieures1Section />
-        <PortesInterieures2Section />
-        
-        <Placards1Section />
-        <Placards2Section />
-        
+        {/* Specific focus category as Hero */}
         <Cuisines1Section />
         <Cuisines2Section />
         
+        {/* Reassurance */}
+        <PourquoiSection />
+        <AteliersSection />
+        <MatieresSection />
+        
+        {/* Rest of the catalog */}
+        <RealisationsSection />
         <ProcessusSection />
         <CertificationsSection />
         <ContactSection />
       </div>
 
-      {/* Floating alignment options toolbar */}
       <FloatingControl />
 
-      {/* Mobile Floating WhatsApp Action Button */}
       <TrackedLink
         className={styles.waFab}
         eventName="contact_whatsapp"
@@ -75,4 +60,4 @@ export const CatalogPage: React.FC = () => {
       </TrackedLink>
     </>
   );
-};
+}

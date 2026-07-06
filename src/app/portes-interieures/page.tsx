@@ -1,64 +1,49 @@
-"use client";
-
 import React from "react";
+import type { Metadata } from "next";
 import styles from "@/app/page.module.css";
 import { MobileNav } from "@/components/Layout";
-import { FloatingControl } from "@/components/UI";
+import { FloatingControl, TrackedLink } from "@/components/UI";
 import {
-  CoverSection,
+  PortesInterieures1Section,
+  PortesInterieures2Section,
   PourquoiSection,
   AteliersSection,
   MatieresSection,
-  RealisationsSection,
-  PortesEntree1Section,
-  PortesEntree2Section,
-  PortesInterieures1Section,
-  PortesInterieures2Section,
-  Placards1Section,
-  Placards2Section,
-  Cuisines1Section,
-  Cuisines2Section,
   ProcessusSection,
   CertificationsSection,
   ContactSection,
+  RealisationsSection,
 } from "@/components/Sections";
-import { TrackedLink } from "@/components/UI";
 
-export const CatalogPage: React.FC = () => {
+export const metadata: Metadata = {
+  title: "Portes Intérieures sur Mesure — Hismar Menuiserie Casablanca",
+  description: "Portes d'intérieur sur mesure, invisibles ou affleurantes, hauteur sol-plafond. Harmonisez vos espaces avec nos finitions bois massif et laquages.",
+};
+
+export default function PortesInterieuresPage() {
   return (
     <>
-      {/* Navigation Header */}
       <MobileNav />
 
-      {/* Main Document slides */}
       <div className={styles.doc}>
-        <CoverSection />
-        <PourquoiSection />
-        <AteliersSection />
-        <MatieresSection />
-        <RealisationsSection />
-        
-        <PortesEntree1Section />
-        <PortesEntree2Section />
-        
+        {/* Specific focus category as Hero */}
         <PortesInterieures1Section />
         <PortesInterieures2Section />
         
-        <Placards1Section />
-        <Placards2Section />
+        {/* Reassurance */}
+        <PourquoiSection />
+        <AteliersSection />
+        <MatieresSection />
         
-        <Cuisines1Section />
-        <Cuisines2Section />
-        
+        {/* Rest of the catalog */}
+        <RealisationsSection />
         <ProcessusSection />
         <CertificationsSection />
         <ContactSection />
       </div>
 
-      {/* Floating alignment options toolbar */}
       <FloatingControl />
 
-      {/* Mobile Floating WhatsApp Action Button */}
       <TrackedLink
         className={styles.waFab}
         eventName="contact_whatsapp"
@@ -75,4 +60,4 @@ export const CatalogPage: React.FC = () => {
       </TrackedLink>
     </>
   );
-};
+}
