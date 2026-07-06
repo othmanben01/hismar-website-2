@@ -117,56 +117,43 @@ export const TextFeaturesGrid = ({
 export const ImageFeaturesGrid = ({
   images,
   height = "80px",
-  fontSize = "9px",
-  letterSpacing = ".2em",
+  fontSize = "11px",
+  letterSpacing = ".15em",
 }: {
   images: { id: string; label: string; caption: string }[];
   height?: string;
   fontSize?: string;
   letterSpacing?: string;
 }) => (
-  <>
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: `repeat(${images.length}, 1fr)`,
-        gap: "9px",
-        marginTop: "13px",
-      }}
-    >
-      {images.map((img, i) => (
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: `repeat(${images.length}, 1fr)`,
+      gap: "12px",
+      marginTop: "16px",
+    }}
+  >
+    {images.map((img, i) => (
+      <div key={i} style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
         <ImageSlot
-          key={i}
           id={img.id}
           defaultLabel={img.label}
           style={{ width: "100%", height }}
         />
-      ))}
-    </div>
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: `repeat(${images.length}, 1fr)`,
-        gap: "9px",
-        marginTop: "6px",
-      }}
-    >
-      {images.map((img, i) => (
         <span
-          key={i}
           style={{
             textAlign: "center",
             fontFamily: "var(--mono)",
             fontSize,
             letterSpacing,
-            color: "rgba(249,248,246,.32)",
+            color: "rgba(249,248,246,.6)",
           }}
         >
           {img.caption}
         </span>
-      ))}
-    </div>
-  </>
+      </div>
+    ))}
+  </div>
 );
 
 export const SectionDivider = ({ marginBottom = "24px" }: { marginBottom?: string }) => (

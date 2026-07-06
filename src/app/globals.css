@@ -106,10 +106,12 @@ h3 {
   }
 
   .page {
-    width: 210mm !important;
-    height: 296.8mm !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
     box-shadow: none !important;
-    break-after: page !important;
+    break-after: auto !important;
+    break-inside: avoid !important;
     print-color-adjust: exact !important;
     -webkit-print-color-adjust: exact !important;
   }
