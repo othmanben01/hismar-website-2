@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 
-const GA_MEASUREMENT_ID = "G-XXXXXXXXXX"; // Remplacez par votre ID de mesure Google
+const GA_MEASUREMENT_ID = "G-DPBNLCDD0V";
 const FB_PIXEL_ID = "1234567890"; // Remplacez par votre ID de Pixel Facebook
 
 export const metadata: Metadata = {
@@ -39,7 +39,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}

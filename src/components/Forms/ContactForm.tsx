@@ -3,6 +3,7 @@
 import React, { useState, useCallback } from "react";
 import styles from "./ContactForm.module.css";
 import { getWhatsAppLink } from "@/utils/whatsapp";
+import { trackConversion } from "@/utils/tracking";
 
 export const ContactForm: React.FC = () => {
   const [prenom, setPrenom] = useState("");
@@ -26,16 +27,9 @@ export const ContactForm: React.FC = () => {
       });
 
       // Tracking des conversions
-      if (typeof window !== "undefined") {
-        if (typeof (window as any).gtag === "function") {
-          (window as any).gtag("event", "generate_lead");
-        }
-        if (typeof (window as any).fbq === "function") {
-          (window as any).fbq("track", "Lead");
-        }
-        
-        window.open(link, "_blank");
-      }
+      trackConversion("generate_lead", "Lead");
+      
+      window.open(link, "_blank");
     },
     [prenom, nom, tel, construction, type, msg]
   );
