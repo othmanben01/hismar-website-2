@@ -9,14 +9,34 @@ export const ContactForm: React.FC = () => {
   const [prenom, setPrenom] = useState("");
   const [nom, setNom] = useState("");
   const [tel, setTel] = useState("");
-  const [construction, setConstruction] = useState("Nouvelle construction");
-  const [type, setType] = useState("Villa");
+  const [construction, setConstruction] = useState<string | null>(null);
+  const [type, setType] = useState<string | null>(null);
   const [msg, setMsg] = useState("");
+  const [error, setError] = useState("");
+
+  const handleConstructionClick = (value: string) => {
+    setConstruction((prev) => (prev === value ? null : value));
+  };
+
+  const handleTypeClick = (value: string) => {
+    setType((prev) => (prev === value ? null : value));
+  };
 
   const handleSubmit = useCallback(
     (e: React.FormEvent) => {
       e.preventDefault();
-      
+
+      if (!construction) {
+        setError("Veuillez sélectionner un type de construction.");
+        return;
+      }
+      if (!type) {
+        setError("Veuillez sélectionner un type de projet.");
+        return;
+      }
+
+      setError("");
+
       const link = getWhatsAppLink({
         prenom,
         nom,
@@ -28,7 +48,7 @@ export const ContactForm: React.FC = () => {
 
       // Tracking des conversions
       trackConversion("form_submit", "Lead");
-      
+
       window.open(link, "_blank");
     },
     [prenom, nom, tel, construction, type, msg]
@@ -36,6 +56,19 @@ export const ContactForm: React.FC = () => {
 
   return (
     <form className={styles.formSection} onSubmit={handleSubmit}>
+      {/* Required fields notice */}
+      <p
+        style={{
+          fontSize: "11px",
+          color: "rgba(249,248,246,0.4)",
+          fontFamily: "var(--mono)",
+          letterSpacing: ".06em",
+          marginBottom: "20px",
+        }}
+      >
+        * Tous les champs sont obligatoires
+      </p>
+
       <div className={styles.formRow}>
         <div className={styles.formField}>
           <label htmlFor="f-prenom" className={styles.label}>
@@ -88,31 +121,16 @@ export const ContactForm: React.FC = () => {
         <div className={styles.formField}>
           <label className={styles.label}>Type de construction</label>
           <div className={styles.radioGroup}>
-            <input
-              type="radio"
-              name="construction"
-              id="c-nouvelle"
-              value="Nouvelle construction"
-              checked={construction === "Nouvelle construction"}
-              onChange={() => setConstruction("Nouvelle construction")}
-              className={styles.radioInput}
-            />
-            <label htmlFor="c-nouvelle" className={styles.radioLabel}>
-              Nouvelle construction
-            </label>
-
-            <input
-              type="radio"
-              name="construction"
-              id="c-renovation"
-              value="Rénovation"
-              checked={construction === "Rénovation"}
-              onChange={() => setConstruction("Rénovation")}
-              className={styles.radioInput}
-            />
-            <label htmlFor="c-renovation" className={styles.radioLabel}>
-              Rénovation
-            </label>
+            {["Nouvelle construction", "Rénovation"].map((val) => (
+              <button
+                key={val}
+                type="button"
+                onClick={() => handleConstructionClick(val)}
+                className={`${styles.radioLabel} ${construction === val ? styles.radioLabelActive : ""}`}
+              >
+                {val}
+              </button>
+            ))}
           </div>
         </div>
       </div>
@@ -121,57 +139,16 @@ export const ContactForm: React.FC = () => {
         <div className={styles.formField}>
           <label className={styles.label}>Type de projet</label>
           <div className={styles.radioGroup}>
-            <input
-              type="radio"
-              name="type"
-              id="t-villa"
-              value="Villa"
-              checked={type === "Villa"}
-              onChange={() => setType("Villa")}
-              className={styles.radioInput}
-            />
-            <label htmlFor="t-villa" className={styles.radioLabel}>
-              Villa
-            </label>
-
-            <input
-              type="radio"
-              name="type"
-              id="t-immeuble"
-              value="Immeuble"
-              checked={type === "Immeuble"}
-              onChange={() => setType("Immeuble")}
-              className={styles.radioInput}
-            />
-            <label htmlFor="t-immeuble" className={styles.radioLabel}>
-              Immeuble
-            </label>
-
-            <input
-              type="radio"
-              name="type"
-              id="t-appartement"
-              value="Appartement"
-              checked={type === "Appartement"}
-              onChange={() => setType("Appartement")}
-              className={styles.radioInput}
-            />
-            <label htmlFor="t-appartement" className={styles.radioLabel}>
-              Appartement
-            </label>
-            
-            <input
-              type="radio"
-              name="type"
-              id="t-autres"
-              value="Autres"
-              checked={type === "Autres"}
-              onChange={() => setType("Autres")}
-              className={styles.radioInput}
-            />
-            <label htmlFor="t-autres" className={styles.radioLabel}>
-              Autres
-            </label>
+            {["Villa", "Immeuble", "Appartement", "Autres"].map((val) => (
+              <button
+                key={val}
+                type="button"
+                onClick={() => handleTypeClick(val)}
+                className={`${styles.radioLabel} ${type === val ? styles.radioLabelActive : ""}`}
+              >
+                {val}
+              </button>
+            ))}
           </div>
         </div>
       </div>
@@ -192,6 +169,20 @@ export const ContactForm: React.FC = () => {
           />
         </div>
       </div>
+
+      {error && (
+        <p
+          style={{
+            fontSize: "12px",
+            color: "#c0392b",
+            fontFamily: "var(--mono)",
+            letterSpacing: ".05em",
+            marginBottom: "12px",
+          }}
+        >
+          {error}
+        </p>
+      )}
 
       <button type="submit" className={styles.btnSubmit}>
         Envoyer via WhatsApp →

@@ -71,6 +71,7 @@
   text-align: center;
   padding: 9px 6px;
   border: 1px solid rgba(168, 131, 74, 0.4);
+  border-left: none;
   background: #2C2018;
   font-family: var(--mono);
   font-size: 9.6px;
@@ -82,16 +83,22 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  outline: none;
 }
 
-.radioLabel:not(:first-of-type) {
-  border-left: none;
+.radioLabel:first-of-type {
+  border-left: 1px solid rgba(168, 131, 74, 0.4);
 }
 
-.radioInput:checked + .radioLabel {
+.radioLabelActive {
   background: rgba(168, 131, 74, 0.18);
-  border-color: var(--gold);
+  border-color: var(--gold) !important;
+  border-left: 1px solid var(--gold) !important;
   color: #F9F8F6;
+}
+
+.radioLabelActive + .radioLabel {
+  border-left: 1px solid rgba(168, 131, 74, 0.4);
 }
 
 .btnSubmit {
