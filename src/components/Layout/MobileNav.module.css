@@ -4,7 +4,7 @@
   z-index: 10000;
   background: var(--night);
   border-bottom: 1px solid rgba(168, 131, 74, 0.3);
-  display: none;
+  display: block;
 }
 
 .mobnavBar {
@@ -24,7 +24,24 @@
 .right {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
+}
+
+.quoteBtn {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  text-decoration: none;
+  border: 1px solid rgba(168, 131, 74, 0.55);
+  padding: 8px 16px;
+  transition: all 0.2s ease;
+}
+
+.quoteBtn:hover {
+  background: rgba(168, 131, 74, 0.12);
+  border-color: var(--gold);
 }
 
 .tel {
@@ -90,9 +107,27 @@
   background: rgba(168, 131, 74, 0.06);
 }
 
+.waLink {
+  color: #4fda88 !important;
+}
+
+.waLink:hover {
+  background: rgba(79, 218, 136, 0.08) !important;
+}
+
 @media (max-width: 767px) {
-  .mobnav {
-    display: block;
+  .right {
+    gap: 12px;
+  }
+  
+  .tel {
+    display: none; /* Hide phone on very small screens to fit Quote + Burger */
+  }
+
+  .quoteBtn {
+    padding: 6px 10px;
+    font-size: 8px;
+    letter-spacing: 0.15em;
   }
 }
 

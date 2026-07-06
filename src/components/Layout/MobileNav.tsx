@@ -30,6 +30,7 @@ export const MobileNav: React.FC = () => {
     { href: "#cuisines", label: "Cuisines" },
     { href: "#processus", label: "Processus" },
     { href: "#contact", label: "Contact" },
+    { href: "https://wa.me/212662177069", label: "WhatsApp", isExternal: true },
   ];
 
   return (
@@ -37,6 +38,15 @@ export const MobileNav: React.FC = () => {
       <div className={styles.mobnavBar}>
         <span className={styles.brand}>HISMAR</span>
         <div className={styles.right}>
+          <TrackedLink
+            href="#contact"
+            eventName="contact_quote"
+            fbEventName="Lead"
+            className={styles.quoteBtn}
+            onClick={closeMenu}
+          >
+            Demander un devis
+          </TrackedLink>
           <TrackedLink
             className={styles.tel}
             href="tel:+212662177069"
@@ -59,7 +69,13 @@ export const MobileNav: React.FC = () => {
       </div>
       <div className={`${styles.menu} ${isOpen ? styles.open : ""}`}>
         {menuLinks.map((link) => (
-          <a key={link.href} href={link.href} onClick={closeMenu} className={styles.menuLink}>
+          <a 
+            key={link.href} 
+            href={link.href} 
+            onClick={closeMenu} 
+            className={`${styles.menuLink} ${link.isExternal ? styles.waLink : ""}`}
+            {...(link.isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+          >
             {link.label}
           </a>
         ))}

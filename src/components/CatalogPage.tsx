@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "@/app/page.module.css";
-import { Topbar, MobileNav } from "@/components/Layout";
+import { MobileNav } from "@/components/Layout";
 import {
   PageSection,
   ImageSlot,
@@ -45,8 +45,7 @@ const TIMELINE_STEPS: TimelineStep[] = [
 export const CatalogPage: React.FC = () => {
   return (
     <>
-      {/* Navigation Headers */}
-      <Topbar />
+      {/* Navigation Header */}
       <MobileNav />
 
       {/* Main Document slides */}
