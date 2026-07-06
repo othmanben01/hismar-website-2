@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "@/app/page.module.css";
-import { PageSection, ImageSlot, TrackedLink, Goldbox, Timeline, TimelineStep } from "@/components/UI";
+import { PageSection } from "@/components/UI";
 import { ContactForm } from "@/components/Forms";
 
 export const ContactSection: React.FC = () => {
@@ -47,7 +47,7 @@ export const ContactSection: React.FC = () => {
             </a>
           </div>
 
-          <div className={styles.contactFoot}>
+          <div className={styles.contactFoot} style={{ marginTop: "56px" }}>
             <div className="mono" style={{ color: "rgba(249,248,246,.3)", marginBottom: "8px" }}>
               HISMAR — EST. 1968
             </div>
@@ -59,7 +59,7 @@ export const ContactSection: React.FC = () => {
                 color: "rgba(249,248,246,.35)",
               }}
             >
-              1968. Le bois élevé au rang d’art.
+              1968. Le bois élevé au rang d&apos;art.
             </div>
           </div>
         </PageSection>
