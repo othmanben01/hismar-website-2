@@ -14,13 +14,19 @@ import {
   ContactSection,
   RealisationsSection,
 } from "@/components/Sections";
+import { getRealizationsData, getCategoriesData } from "@/lib/api";
 
 export const metadata: Metadata = {
   title: "Portes Intérieures sur Mesure — Hismar Menuiserie Casablanca",
   description: "Portes d'intérieur sur mesure, invisibles ou affleurantes, hauteur sol-plafond. Harmonisez vos espaces avec nos finitions bois massif et laquages.",
 };
 
-export default function PortesInterieuresPage() {
+export default async function PortesInterieuresPage() {
+  const [realizations, categories] = await Promise.all([
+    getRealizationsData(),
+    getCategoriesData(),
+  ]);
+
   return (
     <>
       <MobileNav />
@@ -30,13 +36,15 @@ export default function PortesInterieuresPage() {
         <PortesInterieures1Section />
         <PortesInterieures2Section />
         
+        {/* Portfolio */}
+        <RealisationsSection initialProjects={realizations} initialCategories={categories} />
+
         {/* Reassurance */}
         <PourquoiSection />
         <AteliersSection />
         <MatieresSection />
         
-        {/* Rest of the catalog */}
-        <RealisationsSection />
+        {/* Process & Contact */}
         <ProcessusSection />
         <CertificationsSection />
         <ContactSection />

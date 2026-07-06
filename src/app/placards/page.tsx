@@ -14,13 +14,19 @@ import {
   ContactSection,
   RealisationsSection,
 } from "@/components/Sections";
+import { getRealizationsData, getCategoriesData } from "@/lib/api";
 
 export const metadata: Metadata = {
   title: "Placards & Dressings sur Mesure — Hismar Menuiserie Casablanca",
   description: "Placards et dressings sur mesure, modulaires et parfaitement intégrés. L'optimisation de vos espaces à la milliseconde près, avec quincaillerie Blum.",
 };
 
-export default function PlacardsPage() {
+export default async function PlacardsPage() {
+  const [realizations, categories] = await Promise.all([
+    getRealizationsData(),
+    getCategoriesData(),
+  ]);
+
   return (
     <>
       <MobileNav />
@@ -30,13 +36,15 @@ export default function PlacardsPage() {
         <Placards1Section />
         <Placards2Section />
         
+        {/* Portfolio */}
+        <RealisationsSection initialProjects={realizations} initialCategories={categories} />
+
         {/* Reassurance */}
         <PourquoiSection />
         <AteliersSection />
         <MatieresSection />
         
-        {/* Rest of the catalog */}
-        <RealisationsSection />
+        {/* Process & Contact */}
         <ProcessusSection />
         <CertificationsSection />
         <ContactSection />

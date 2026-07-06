@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import styles from "@/app/page.module.css";
 import { MobileNav } from "@/components/Layout";
@@ -23,8 +21,17 @@ import {
   ContactSection,
 } from "@/components/Sections";
 import { TrackedLink } from "@/components/UI";
+import { Project, Category } from "@/hooks/useRealisations";
 
-export const CatalogPage: React.FC = () => {
+interface CatalogPageProps {
+  initialProjects?: Project[];
+  initialCategories?: Category[];
+}
+
+export const CatalogPage: React.FC<CatalogPageProps> = ({
+  initialProjects = [],
+  initialCategories = [],
+}) => {
   return (
     <>
       {/* Navigation Header */}
@@ -36,7 +43,6 @@ export const CatalogPage: React.FC = () => {
         <PourquoiSection />
         <AteliersSection />
         <MatieresSection />
-        <RealisationsSection />
         
         <PortesEntree1Section />
         <PortesEntree2Section />
@@ -49,6 +55,9 @@ export const CatalogPage: React.FC = () => {
         
         <Cuisines1Section />
         <Cuisines2Section />
+
+        {/* Portfolio — after all category sections */}
+        <RealisationsSection initialProjects={initialProjects} initialCategories={initialCategories} />
         
         <ProcessusSection />
         <CertificationsSection />

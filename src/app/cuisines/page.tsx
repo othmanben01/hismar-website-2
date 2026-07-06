@@ -14,13 +14,19 @@ import {
   ContactSection,
   RealisationsSection,
 } from "@/components/Sections";
+import { getRealizationsData, getCategoriesData } from "@/lib/api";
 
 export const metadata: Metadata = {
   title: "Cuisines sur Mesure — Hismar Menuiserie Casablanca",
   description: "Conception, fabrication et installation de cuisines sur mesure. Design contemporain, bois certifié et mécanismes Blum.",
 };
 
-export default function CuisinesPage() {
+export default async function CuisinesPage() {
+  const [realizations, categories] = await Promise.all([
+    getRealizationsData(),
+    getCategoriesData(),
+  ]);
+
   return (
     <>
       <MobileNav />
@@ -30,13 +36,15 @@ export default function CuisinesPage() {
         <Cuisines1Section />
         <Cuisines2Section />
         
+        {/* Portfolio */}
+        <RealisationsSection initialProjects={realizations} initialCategories={categories} />
+
         {/* Reassurance */}
         <PourquoiSection />
         <AteliersSection />
         <MatieresSection />
         
-        {/* Rest of the catalog */}
-        <RealisationsSection />
+        {/* Process & Contact */}
         <ProcessusSection />
         <CertificationsSection />
         <ContactSection />

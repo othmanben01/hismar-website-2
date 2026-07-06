@@ -14,13 +14,19 @@ import {
   ContactSection,
   RealisationsSection,
 } from "@/components/Sections";
+import { getRealizationsData, getCategoriesData } from "@/lib/api";
 
 export const metadata: Metadata = {
   title: "Portes d'Entrée sur Mesure — Hismar Menuiserie Casablanca",
   description: "Portes d'entrée pivot sol-plafond et classiques sur mesure. Finitions haut de gamme, quincaillerie allemande garantie 10 ans.",
 };
 
-export default function PortesEntreePage() {
+export default async function PortesEntreePage() {
+  const [realizations, categories] = await Promise.all([
+    getRealizationsData(),
+    getCategoriesData(),
+  ]);
+
   return (
     <>
       <MobileNav />
@@ -30,13 +36,15 @@ export default function PortesEntreePage() {
         <PortesEntree1Section />
         <PortesEntree2Section />
         
+        {/* Portfolio */}
+        <RealisationsSection initialProjects={realizations} initialCategories={categories} />
+
         {/* Reassurance */}
         <PourquoiSection />
         <AteliersSection />
         <MatieresSection />
         
-        {/* Rest of the catalog */}
-        <RealisationsSection />
+        {/* Process & Contact */}
         <ProcessusSection />
         <CertificationsSection />
         <ContactSection />
