@@ -6,8 +6,8 @@
 .formRow {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-bottom: 11px;
+  gap: 24px;
+  margin-bottom: 24px;
 }
 
 .formRow.full {
@@ -17,7 +17,7 @@
 .formField {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
 }
 
 .label {
@@ -105,7 +105,7 @@
   letter-spacing: 0.28em;
   text-transform: uppercase;
   cursor: pointer;
-  margin-top: 4px;
+  margin-top: 20px;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 

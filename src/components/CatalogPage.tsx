@@ -1880,7 +1880,7 @@ export const CatalogPage: React.FC = () => {
             </p>
           </div>
 
-          <div className={styles.bodyPad}>
+          <div className={styles.bodyPad} style={{ marginTop: "48px" }}>
             <ContactForm />
           </div>
 
