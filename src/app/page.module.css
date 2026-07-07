@@ -87,7 +87,7 @@
 
 .coverCenter {
   text-align: center;
-  padding: 76px 60px 16px;
+  padding: 76px 60px 0;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -482,10 +482,9 @@
   justify-content: center;
   gap: 14px;
   padding: 0 60px;
-  margin-top: 22px;
   width: 100%;
   max-width: 1200px;
-  margin: 22px auto 0;
+  margin: 39px auto 39px;
 }
 
 .btnWa {
