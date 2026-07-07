@@ -39,7 +39,7 @@ export const ProcessusSection: React.FC = () => {
             <span className={styles.meta}>06 — Notre processus</span>
           </div>
           <div className={styles.bodyPad} style={{ paddingTop: "54px" }}>
-            <span className="eyebrow">Notre processus</span>
+
             <h2 style={{ marginTop: "16px", maxWidth: "540px" }}>
               De votre vision à la réalisation
             </h2>

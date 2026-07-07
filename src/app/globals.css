@@ -48,7 +48,7 @@ html {
 h2 {
   font-family: var(--serif);
   font-weight: normal;
-  font-size: 48px;
+  font-size: clamp(32px, 6vw, 48px);
   line-height: 1.14;
   color: var(--night);
 }

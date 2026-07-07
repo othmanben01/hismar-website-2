@@ -32,7 +32,7 @@ export const Placards1Section: React.FC = () => {
         }}
       >
         <div>
-          <span className="eyebrow">Placards &amp; dressings sur mesure</span>
+
           <h2
             style={{
               marginTop: "13px",

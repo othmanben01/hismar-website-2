@@ -32,7 +32,7 @@ export const PortesInterieures1Section: React.FC = () => {
         }}
       >
         <div>
-          <span className="eyebrow">Portes intérieures</span>
+
           <h2
             style={{
               marginTop: "13px",

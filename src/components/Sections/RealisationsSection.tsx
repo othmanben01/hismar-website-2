@@ -20,7 +20,7 @@ export const RealisationsSection: React.FC<RealisationsSectionProps> = ({
         <span className={styles.meta}>05 — Réalisations</span>
       </div>
       <div className={styles.bodyPad} style={{ paddingTop: "54px" }}>
-        <span className="eyebrow">Nos réalisations par service</span>
+
         <h2 style={{ marginTop: "16px" }}>Découvrez nos derniers projets</h2>
       </div>
 

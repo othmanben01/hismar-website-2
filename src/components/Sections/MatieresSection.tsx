@@ -11,7 +11,7 @@ export const MatieresSection: React.FC = () => {
             <span className={styles.meta}>04 — Matières premières</span>
           </div>
           <div className={styles.bodyPad} style={{ paddingTop: "54px" }}>
-            <span className="eyebrow">Nos matières premières</span>
+
             <h2 style={{ marginTop: "16px", maxWidth: "580px" }}>
               Des matériaux certifiés, importés d’Europe
             </h2>

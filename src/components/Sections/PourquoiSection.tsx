@@ -10,7 +10,7 @@ export const PourquoiSection: React.FC = () => {
         <span className={styles.meta}>02 — Pourquoi Hismar</span>
       </div>
       <div className={styles.bodyPad} style={{ paddingTop: "54px" }}>
-        <span className="eyebrow">Pourquoi Hismar</span>
+
         <h2 style={{ marginTop: "16px", maxWidth: "540px" }}>
           58 ans d’excellence industrielle
         </h2>

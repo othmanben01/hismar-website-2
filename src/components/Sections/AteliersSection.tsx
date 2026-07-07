@@ -11,7 +11,7 @@ export const AteliersSection: React.FC = () => {
             <span className={styles.meta}>03 — Ateliers &amp; technologie</span>
           </div>
           <div className={styles.bodyPad} style={{ paddingTop: "54px" }}>
-            <span className="eyebrow">Nos ateliers &amp; technologie</span>
+
             <h2 style={{ marginTop: "16px", maxWidth: "580px" }}>
               La précision industrielle au service de votre villa
             </h2>

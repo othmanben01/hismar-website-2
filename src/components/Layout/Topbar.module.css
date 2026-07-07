@@ -16,8 +16,8 @@
 .phoneLink,
 .whatsappLink {
   font-family: var(--mono);
-  font-size: 10.8px;
-  letter-spacing: 0.22em;
+  font-size: 13.2px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   text-decoration: none;
   color: rgba(249, 248, 246, 0.72);

@@ -11,7 +11,7 @@ export const CertificationsSection: React.FC = () => {
             <span className={styles.meta}>07 — Engagements &amp; Garanties</span>
           </div>
           <div className={styles.bodyPad} style={{ paddingTop: "54px" }}>
-            <span className="eyebrow">Nos garanties</span>
+
             <h2 style={{ marginTop: "16px", maxWidth: "580px" }}>
               Une fabrication responsable, des garanties claires
             </h2>
