@@ -47,11 +47,13 @@ export const ImageSlot: React.FC<ImageSlotProps> = ({
   );
 
   const handleClick = useCallback(() => {
+    if (process.env.NODE_ENV !== "development") return;
     fileInputRef.current?.click();
   }, []);
 
   const handleFileChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
+      if (process.env.NODE_ENV !== "development") return;
       const file = e.target.files?.[0];
       if (file) {
         handleFile(file);
@@ -63,16 +65,19 @@ export const ImageSlot: React.FC<ImageSlotProps> = ({
 
   // Drag and Drop Handlers
   const handleDragOver = useCallback((e: React.DragEvent) => {
+    if (process.env.NODE_ENV !== "development") return;
     e.preventDefault();
     setIsDragOver(true);
   }, []);
 
   const handleDragLeave = useCallback(() => {
+    if (process.env.NODE_ENV !== "development") return;
     setIsDragOver(false);
   }, []);
 
   const handleDrop = useCallback(
     (e: React.DragEvent) => {
+      if (process.env.NODE_ENV !== "development") return;
       e.preventDefault();
       setIsDragOver(false);
       const file = e.dataTransfer.files?.[0];
@@ -85,6 +90,7 @@ export const ImageSlot: React.FC<ImageSlotProps> = ({
 
   // Mouse Enter/Leave for Floating Controls
   const handleMouseEnter = useCallback(() => {
+    if (process.env.NODE_ENV !== "development") return;
     if (hasImage && slotRef.current) {
       const rect = slotRef.current.getBoundingClientRect();
       setActiveSlot(id, rect);
@@ -92,6 +98,7 @@ export const ImageSlot: React.FC<ImageSlotProps> = ({
   }, [id, hasImage, setActiveSlot]);
 
   const handleMouseLeave = useCallback(() => {
+    if (process.env.NODE_ENV !== "development") return;
     // We send a null target after a short delay so the panel can catch the mouse
     // If the panel mouseEnter fires, it will keep it active.
     setActiveSlot(null);
