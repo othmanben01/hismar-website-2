@@ -38,9 +38,14 @@ export const CategoryHeroCTAs = () => (
       </svg>
       Discuter sur WhatsApp
     </TrackedLink>
-    <a className={styles.btnDevis} href="#contact">
+    <TrackedLink 
+      className={styles.btnDevis} 
+      href="#contact"
+      eventName="contact_quote"
+      fbEventName="Lead"
+    >
       Demander un devis →
-    </a>
+    </TrackedLink>
   </div>
 );
 

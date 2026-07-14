@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "@/app/page.module.css";
-import { PageSection } from "@/components/UI";
+import { PageSection, TrackedLink } from "@/components/UI";
 import { ContactForm } from "@/components/Forms";
 
 export const ContactSection: React.FC = () => {
@@ -42,9 +42,14 @@ export const ContactSection: React.FC = () => {
           </div>
 
           <div className={styles.ctaWrap}>
-            <a className={styles.cta} href="mailto:contact@hismarmenuiserie.ma">
-              Nous écrire par courriel
-            </a>
+            <TrackedLink 
+            className={styles.cta} 
+            href="mailto:contact@hismarmenuiserie.ma"
+            eventName="contact_email"
+            fbEventName="Contact"
+          >
+            Nous écrire par courriel
+          </TrackedLink>
           </div>
 
           <div className={styles.contactFoot} style={{ marginTop: "56px" }}>

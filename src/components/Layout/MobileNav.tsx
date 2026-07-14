@@ -68,17 +68,34 @@ export const MobileNav: React.FC = () => {
         </div>
       </div>
       <div className={`${styles.menu} ${isOpen ? styles.open : ""}`}>
-        {menuLinks.map((link) => (
-          <a 
-            key={link.href} 
-            href={link.href} 
-            onClick={closeMenu} 
-            className={`${styles.menuLink} ${link.isExternal ? styles.waLink : ""}`}
-            {...(link.isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-          >
-            {link.label}
-          </a>
-        ))}
+        {menuLinks.map((link) => {
+          if (link.isExternal) {
+            return (
+              <TrackedLink
+                key={link.href}
+                href={link.href}
+                onClick={closeMenu}
+                className={`${styles.menuLink} ${styles.waLink}`}
+                eventName="contact_whatsapp"
+                fbEventName="Contact"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link.label}
+              </TrackedLink>
+            );
+          }
+          return (
+            <a 
+              key={link.href} 
+              href={link.href} 
+              onClick={closeMenu} 
+              className={styles.menuLink}
+            >
+              {link.label}
+            </a>
+          );
+        })}
       </div>
     </nav>
   );
