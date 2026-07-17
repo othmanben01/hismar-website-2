@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import styles from "@/app/page.module.css";
 import { MobileNav } from "@/components/Layout";
-import { FloatingControl, TrackedLink } from "@/components/UI";
+import { FloatingControl, TrackedLink, DynamicRemarketing } from "@/components/UI";
 import {
   Cuisines1Section,
   Cuisines2Section,
@@ -29,6 +29,7 @@ export default async function CuisinesPage() {
 
   return (
     <>
+      <DynamicRemarketing itemId="cuisines" />
       <MobileNav />
 
       <div className={styles.doc}>

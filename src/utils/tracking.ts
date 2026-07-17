@@ -23,3 +23,22 @@ export const trackConversion = (eventName: string, fbEventName?: string) => {
     });
   }
 };
+
+export const trackDynamicRemarketing = (itemId: string) => {
+  try {
+    if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
+      (window as any).gtag("event", "page_view", {
+        send_to: "AW-17076278681",
+        items: [
+          {
+            id: itemId,
+            google_business_vertical: "custom",
+          },
+        ],
+      });
+      console.log(`Dynamic remarketing tracked: ${itemId}`);
+    }
+  } catch (error) {
+    console.error("Dynamic remarketing error:", error);
+  }
+};
